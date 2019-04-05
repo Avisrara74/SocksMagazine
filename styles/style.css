@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Acme');
 
 * {
 	margin: 0px;
@@ -8,6 +9,58 @@
 	font-size: 18px;
 }
 
+.link-style-fix {
+	color: white;
+	font-style: none;
+}
+
 header {
 	background-color: #423a66;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	height: 9.5vh;
+	color: white;
+	text-align: center;
+}
+
+
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+
+.container {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	grid-template-areas: "header"
+						 "main"
+						 "footer";
+}
+
+.logo>img {
+	height: 6vh;
+	width: auto;
+	object-fit: cover;
+	padding: 1.5vh 0px 1.5vh 0px;
+}
+
+.logo>span {
+	position: absolute;
+	line-height: 10.5vh;
+	margin: 0px 0px 0px 14px;
+	font-size: 30px;
+	font-family: 'Acme', sans-serif;
+}
+
+nav>ul>li {
+	display: inline;
+	margin: 0px 10px 0px 10px;
+	font-size: 22px;
+	line-height: 9.5vh;
+}
+
+li>a {
+	text-decoration: none;
+	color: white;
 }
