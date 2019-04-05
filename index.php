@@ -32,6 +32,7 @@
 	<main class="mainPage">
 	<!-- main theme -->
 		<section class="mainTheme">
+			<img src="images/main/main.jpg" alt="">
 			<h2>Цветные,<br>яркие,<br>твои!</h2>
 			<p>- оригинальные принты и надписи</p>
 			<p>- подарочная упаковка</p>
@@ -87,7 +88,7 @@
 		<div>
 			<p><a href="#">Политика конфиденциальности</a></p>
 			<p><a href="#">avisrara74@gmail.com</a></p>
-			<p><a href="#">SocksDesign, 2019</a></p>
+			<p>SocksDesign, 2019</p>
 		</div>
 	</footer>
 </body>

@@ -69,14 +69,26 @@ nav>ul>li>a {
 	color: white;
 }
 
+/* mainPage */ 
+
+.mainTheme {
+	height: 55vh;
+	background-image: url('images/main/main.jpg');      
+	background-position: center center;      
+	background-repeat: no-repeat;      
+	background-attachment: fixed;      
+	background-size: cover;      
+	background-color: #464646;
+}
+
+
+
+/* footer */
 
 footer {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	background-color: #212127;
-	position: absolute;
-	bottom: 0;
-	left: 0;
 	width: 100%;
 	height: 20vh;
 	align-items: center;
@@ -121,7 +133,7 @@ footer>div:nth-child(3)>p:not(:last-child) {
 footer>div:nth-child(3)>p:not(:last-child)>a {
 	color: #919193;
 }
-footer>div:nth-child(3)>p:last-child>a {
+footer>div:nth-child(3)>p:last-child {
 	color: #533d58;
 	text-decoration: none;
 }
