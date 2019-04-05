@@ -1,5 +1,9 @@
+/* nav */
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
+/* logo */
 @import url('https://fonts.googleapis.com/css?family=Acme');
+/* standart */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 * {
 	margin: 0px;
@@ -29,7 +33,7 @@ header{grid-area: header;}
 main{grid-area: main;}
 footer{grid-area: footer;}
 
-.container {
+body {
 	display: grid;
 	grid-template-rows: 1fr;
 	grid-template-columns: 1fr;
@@ -60,7 +64,64 @@ nav>ul>li {
 	line-height: 9.5vh;
 }
 
-li>a {
+nav>ul>li>a {
 	text-decoration: none;
 	color: white;
+}
+
+
+footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	background-color: #212127;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 20vh;
+	align-items: center;
+	justify-items: center;
+}
+
+footer>div>ul>li {
+	list-style: none;
+	display: inline;
+}
+
+footer>div:nth-child(1) {
+	color: #68497a;
+	font-size: 6vh;
+}
+
+footer>div:nth-child(2) {
+	color: white;
+}
+footer>div:nth-child(2)>span {
+	font-size: 30px;
+}
+footer>div:nth-child(2)>ul {
+	margin-top: 5px;
+}
+footer>div:nth-child(2)>ul>li>a {
+	color: white;
+	font-size: 16px;
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: 1px;
+
+}
+
+footer>div:nth-child(3)>p>a {
+	font-size: 14px;
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: 1px;
+}
+footer>div:nth-child(3)>p:not(:last-child) {
+	margin-bottom: 8px;
+}
+footer>div:nth-child(3)>p:not(:last-child)>a {
+	color: #919193;
+}
+footer>div:nth-child(3)>p:last-child>a {
+	color: #533d58;
+	text-decoration: none;
 }

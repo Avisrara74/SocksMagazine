@@ -29,10 +29,9 @@
 		</nav>
 	</header>
 
-
-	<main>
+	<main class="mainPage">
 	<!-- main theme -->
-		<section>
+		<section class="mainTheme">
 			<h2>Цветные,<br>яркие,<br>твои!</h2>
 			<p>- оригинальные принты и надписи</p>
 			<p>- подарочная упаковка</p>
@@ -40,7 +39,7 @@
 		</section>
 
 	<!-- magazine items -->
-		<section>
+		<section class="navItems">
 			<h2>Магазин</h2>
 			<div></div>
 			<div></div>
@@ -51,7 +50,7 @@
 		</section>
 
 	<!-- recomendation -->
-		<section>
+		<section class="recomendationItems">
 			<div><h3></h3></div>
 			<div><h3></h3></div>
 			<div><h3></h3></div>
@@ -59,7 +58,7 @@
 		</section>
 
 	<!-- some info -->
-		<section>
+		<section class="mainPageSomeInfo">
 			<div>
 				<img src="#" alt="test">
 				<p>monday, october 22</p>
@@ -71,19 +70,24 @@
 
 
 	<footer>
-		<div>BBBSocks</div>
+		<div>BBSocks</div>
 		<div>
 			<span>+7 982 325 70 59</span>
+			<br>
 			<ul>
-				<li>О нас</li>
-				<li>Доставка</li>
-				<li>Оплата</li>
-				<li>Возврат</li>
+				<li><a href="#">О нас</a></li>
+				<span>/</span>
+				<li><a href="#">Доставка</a></li>
+				<span>/</span>
+				<li><a href="#">Оплата</a></li>
+				<span>/</span>
+				<li><a href="#">Возврат</a></li>
 			</ul>
 		</div>
 		<div>
-			<span>Политика конфиденциальности<br>avisrara74@gmail.com<br></span>
-			<span>SocksDesign, 2019</span>
+			<p><a href="#">Политика конфиденциальности</a></p>
+			<p><a href="#">avisrara74@gmail.com</a></p>
+			<p><a href="#">SocksDesign, 2019</a></p>
 		</div>
 	</footer>
 </body>
