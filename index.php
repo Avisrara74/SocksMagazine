@@ -32,7 +32,6 @@
 	<main class="mainPage">
 	<!-- main theme -->
 		<section class="mainTheme">
-			<img src="images/main/main.jpg" alt="">
 			<h2>Цветные,<br>яркие,<br>твои!</h2>
 			<p>- оригинальные принты и надписи</p>
 			<p>- подарочная упаковка</p>
