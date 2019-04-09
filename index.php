@@ -59,52 +59,52 @@
 		<section class="recomendationItems">
 			<div>
 				<a href="#">
-					<img src="images/main/1.jpg" alt="test"><br>
-					<p>monday, october 22</p><br>
-					<p>concept animals</p><br>
+					<img src="images/main/1.jpg" alt="test">
+					<p>monday, october 22</p>
+					<p>concept animals</p>
 					<p>они все знают</p>
 				</a>
-			</div>	
+			</div>
 			<div>
 				<a href="#">
-					<img src="images/main/1.jpg" alt="test"><br>
-					<p>monday, october 22</p><br>
-					<p>concept animals</p><br>
+					<img src="images/main/1.jpg" alt="test">
+					<p>monday, october 22</p>
+					<p>concept animals</p>
 					<p>они все знают</p>
 				</a>
-			</div>	
+			</div>
 			<div>
 				<a href="#">
-					<img src="images/main/1.jpg" alt="test"><br>
-					<p>monday, october 22</p><br>
-					<p>concept animals</p><br>
+					<img src="images/main/1.jpg" alt="test">
+					<p>monday, october 22</p>
+					<p>concept animals</p>
 					<p>они все знают</p>
 				</a>
-			</div>	
+			</div>
 			<div>
 				<a href="#">
-					<img src="images/main/1.jpg" alt="test"><br>
-					<p>monday, october 22</p><br>
-					<p>concept animals</p><br>
+					<img src="images/main/1.jpg" alt="test">
+					<p>monday, october 22</p>
+					<p>concept animals</p>
 					<p>они все знают</p>
 				</a>
-			</div>	
+			</div>
 			<div>
 				<a href="#">
-					<img src="images/main/1.jpg" alt="test"><br>
-					<p>monday, october 22</p><br>
-					<p>concept animals</p><br>
+					<img src="images/main/1.jpg" alt="test">
+					<p>monday, october 22</p>
+					<p>concept animals</p>
 					<p>они все знают</p>
 				</a>
-			</div>	
+			</div>
 			<div>
 				<a href="#">
-					<img src="images/main/1.jpg" alt="test"><br>
-					<p>monday, october 22</p><br>
-					<p>concept animals</p><br>
+					<img src="images/main/1.jpg" alt="test">
+					<p>monday, october 22</p>
+					<p>concept animals</p>
 					<p>они все знают</p>
 				</a>
-			</div>		
+			</div>
 		</section>
 
 	<!-- some info -->
