@@ -5,6 +5,7 @@
 	<title>socksDesign</title>
 	<link rel="stylesheet" href="styles/style.css" type="text/css">
 	<link rel="shortcut icon" href="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header>
@@ -108,7 +109,7 @@
 
 	<!-- some info -->
 		<section class="mainPageSomeInfo">
-			<div>
+			<div> 
 				<h5>BIG BANG SOCKS - НОСКИ БОЛЬШОГО ВЗРЫВА</h5>
 				<h5>Бескрайний космос, наша планета, человек — все это появилось в результате одного неординарного события, которое ученые называют «большим взрывом».</h5>
 				<h5>Большой взрыв — это творческий импульс, из которого родилось «всё» буквально из «ничего».</h5>
@@ -116,7 +117,7 @@
 				<h5>Теперь мы хотим, чтобы наши яркие и нескучные носки вдохновляли воплощать самые смелые замыслы.</h5>
 				<h5>Создай свою Вселенную вместе с нами!</h5>
 			</div>
-			<div><img src="images/main/8.png" alt=""></div>
+			<div><img src="images/main/8-1.png" alt=""></div>
 		</section>
 	</main>
 
