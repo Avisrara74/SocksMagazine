@@ -20,13 +20,13 @@
 header {
 	background-color: #423a66;
 	display: grid;
+	width: 100%;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr;
 	height: 9.5vh;
 	color: white;
 	text-align: center;
 }
-
 
 header{grid-area: header;}
 main{grid-area: main;}
@@ -218,6 +218,80 @@ a:nth-child(6)>.content-img {
     object-fit: cover;
 }
 
+/* delivery */
+
+.mainDelivery>div:first-child {grid-area: one;}
+.mainDelivery>div:nth-child(2) {grid-area: two;}
+.mainDelivery>div:last-child {grid-area: three;}
+
+.standartMain {
+	font-family: 'Roboto Condensed', sans-serif;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "one"
+						 "two"
+						 "three";
+}
+
+
+.standartMain>div:first-child {
+	background-image: url('../images/main/7.png');
+	background-position: center center;      
+	background-repeat: no-repeat;      
+	background-attachment: fixed;      
+	background-size: cover;     
+	height: 15vh;
+}
+
+.standartMain>div:first-child>h1 {
+	text-align: center;
+	line-height: 15vh;
+	font-size: 3.8em;
+	color: white;
+	letter-spacing: 2px;
+}
+
+.standartMain>div:last-child {
+	
+}
+.standartMain>div:last-child>img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	max-height: 90vh;
+	margin-bottom: -5px;
+}
+
+.standartMain>div:nth-child(2) {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	margin: 10vh 0px 4vh 0px;
+}
+
+.standartMain>div:nth-child(2)>div:first-child {
+	grid-column: 1 / 5;
+	text-align: right;
+}
+
+.standartMain>div:nth-child(2)>div:last-child {
+	grid-column: 5 / 9;
+	text-align: left;
+	padding: 0px 0px 0px 3vw;
+}
+
+.standartMain>.deliveryInfoBlock>div:last-child>p:nth-child(1) ,
+.standartMain>.deliveryInfoBlock>div:last-child>p:nth-child(5) ,
+.standartMain>.deliveryInfoBlock>div:last-child>p:nth-child(11) {
+	font-weight: bold;
+}
+
+.standartMain>.payInfoBlock>div:last-child>p:nth-child(1) ,
+.standartMain>.payInfoBlock>div:last-child>p:nth-child(11)>span ,
+.standartMain>.payInfoBlock>div:last-child>p:nth-child(13)>span {
+	font-weight: bold;
+}
+
 /* footer */
 
 footer {
@@ -341,6 +415,17 @@ footer>div:nth-child(3)>p:last-child {
 	header>nav {
 		text-align: center;
 		grid-column: 1 / 2;
+	}
+	.standartMain>div:nth-child(2) {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-top: 0px;
+	}
+
+	.standartMain>div:nth-child(2)>div:first-child , .standartMain>div:nth-child(2)>div:last-child {
+		grid-column: 1 / 2;
+		text-align: left;
+		padding: 0px 20vw 0px 20vw;
 	}
 }
 
