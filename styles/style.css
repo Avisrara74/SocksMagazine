@@ -354,7 +354,7 @@ a:nth-child(6)>.content-img {
 
 .bottomButtons a {
 	text-decoration: none;
-	color: #999;
+	color: black;
 	text-align: center;
 }
 .bottomButtons a:hover {
