@@ -21,8 +21,6 @@
 				<span>/</span>
 				<li><a href="/index.php?page=shop">Магазин</a></li>
 				<span>/</span>
-				<li><a href="/index.php?page=about">О нас</a></li>
-				<span>/</span>
 				<li><a href="/index.php?page=delivery">Доставка</a></li>
 				<span>/</span>
 				<li><a href="/index.php?page=pay">Оплата</a></li>

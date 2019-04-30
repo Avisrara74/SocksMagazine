@@ -1,17 +1,17 @@
 <main class="mainShop">
 	<div class="shopItems">
 		<a href="index.php?page=Наборы носков">
-			<div>
+			<div class="increase">
 				<h4>Наборы носков</h4>
 			</div>
 		</a>
 		<a href="index.php?page=Носки стандартной длинны">
-			<div>
+			<div class="increase">
 				<h4>Носки стандартной <br> длинны</h4>
 			</div>
 		</a>
 		<a href="index.php?page=Укороченные носки">
-			<div>
+			<div class="increase">
 				<h4>Укороченные носки</h4>
 			</div>
 		</a>
@@ -21,12 +21,12 @@
 			</div>
 		</a>
 		<a href="index.php?page=Спортивные носки">
-			<div>
+			<div class="increase">
 				<h4>Спортивные носки</h4>
 			</div>
 		</a>
 		<a href="index.php?page=Подарочные коробки">
-			<div>
+			<div class="increase">
 				<h4>Подарочные коробки</h4>
 			</div>
 		</a>
