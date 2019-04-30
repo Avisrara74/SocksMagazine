@@ -296,7 +296,7 @@ a:nth-child(6)>.content-img {
 
 .mainShop {
 	display: grid;
-	margin: 10vh 3vw 10vh 3vw;
+	margin: 6vh 3vw 0vh 3vw;
 }
 
 .shopItems {
@@ -620,9 +620,6 @@ footer>div:nth-child(3)>p:last-child {
 	.shopItems {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
-	}
-	.mainShop {
-		margin: 4vh auto 4vh auto;
 	}
 }
 
