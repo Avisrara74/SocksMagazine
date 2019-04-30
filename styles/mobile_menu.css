@@ -127,6 +127,11 @@ ul.menu {
           perspective: 1000;
   color: white;
 }
+
+ul.menu li a {
+  color: white;
+  text-decoration: none;
+}
 ul.menu li {
   opacity: 0;
   text-align: center;

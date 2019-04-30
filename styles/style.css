@@ -622,16 +622,11 @@ footer>div:nth-child(3)>p:last-child {
 		grid-template-rows: 1fr;
 	}
 	.mainShop {
-		margin-top: 4vh;
+		margin: 4vh auto 4vh auto;
 	}
 }
 
 @media (max-width: 376px) {
-	.recomendationItems {
-		width: 90vw;
-		margin: 5vh auto 5vh auto;
-		grid-gap: 25px;
-	}
 	.navItemsWrap>a>div>h3 {
 		font-size: 1.4em;
 	}

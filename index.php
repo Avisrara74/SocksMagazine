@@ -48,8 +48,6 @@
 			<span>+7 982 325 70 59</span>
 			<br>
 			<ul>
-				<li><a href="/index.php?page=about">О нас</a></li>
-				<span>/</span>
 				<li><a href="/index.php?page=delivery">Доставка</a></li>
 				<span>/</span>
 				<li><a href="/index.php?page=pay">Оплата</a></li>
