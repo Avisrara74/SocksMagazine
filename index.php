@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>socksDesign</title>
 	<link rel="stylesheet" href="styles/style.css" type="text/css">
+	<link rel="stylesheet" href="styles/mobile_menu.css" type="text/css">
 	<link rel="shortcut icon" href="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -15,7 +16,7 @@
 				<span>Big Bang Socks</span>
 			</div>
 		</a>
-		<nav>
+		<nav class="standart_menu">
 			<ul>
 				<li><a href="/index.php">Главная</a></li>
 				<span>/</span>
@@ -26,6 +27,17 @@
 				<li><a href="/index.php?page=pay">Оплата</a></li>
 			</ul>
 		</nav>
+		<div class="display-none">
+			<button class="menu-toggle"></button>
+			<nav class="mobile_menu">
+			  <ul class="menu">
+			    <li data-text="Главная">Главная</li>
+			    <li data-text="Магазин">Магазин</li>
+			    <li data-text="Доставка">Доставка</li>
+			    <li data-text="Оплата">Оплата</li>
+			  </ul>
+			</nav>
+		</div>
 	</header>
 
 	<?php include('./func.php') ?>
@@ -51,5 +63,7 @@
 			<p>SocksDesign, 2019</p>
 		</div>
 	</footer>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="js/index.js"></script>
 </body>
 </html>
