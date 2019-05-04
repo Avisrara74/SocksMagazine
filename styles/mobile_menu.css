@@ -9,7 +9,7 @@
   font-size: 48px;
 }
 
-button {
+button.menu-toggle{
   opacity: 0.6;
   background-color: transparent;
   position: fixed;
@@ -24,7 +24,7 @@ button {
   transition: opacity 0.2s ease-out;
   cursor: pointer;
 }
-button:before {
+button.menu-toggle:before {
   content: "";
   position: absolute;
   top: 0;
@@ -39,7 +39,7 @@ button:before {
   -webkit-transition: opacity 0.2s ease-out, width 0.2s 0.2s ease-out;
   transition: opacity 0.2s ease-out, width 0.2s 0.2s ease-out;
 }
-button:after {
+button.menu-toggle:after {
   opacity: 0;
   content: '×';
   color: white;
@@ -52,11 +52,11 @@ button:after {
   -webkit-transition: opacity 0.4s ease-out;
   transition: opacity 0.4s ease-out;
 }
-button:active {
+button.menu-toggle:active {
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
-button:hover {
+button.menu-toggle:hover {
   opacity: 1;
 }
 .open button {
