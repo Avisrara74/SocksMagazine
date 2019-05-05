@@ -9,6 +9,8 @@ $page = $_GET['page'];
 		require('delivery.php');
 	} elseif ($page == 'pay') {
 		require('pay.php');
+	} elseif ($page == 'openItem') {
+		require('openItem.php');
 	}
 
 	  elseif ($page == 'Наборы носков') {
