@@ -32,6 +32,12 @@ header{grid-area: header;}
 main{grid-area: main;}
 footer{grid-area: footer;}
 
+html, body {
+	height: 100%;
+	position: relative;
+  	min-height: 100%;
+}
+
 body {
 	display: grid;
 	grid-template-rows: 1fr;
@@ -464,35 +470,44 @@ main.openItem {
 .openItemWrap {
 	margin: 5vh 2vw;	
 	display: grid;
-	grid-template-columns: repeat(6, minmax(auto, 200px));
-	grid-template-rows: repeat(4, minmax(auto, 200px));
-}
-
-.openItemWrap>div:first-child {
-	grid-column: span 4;
-	grid-row: span 4;
-}
-.openItemWrap>div:last-child {
-	grid-column: span 2;
-	grid-row: span 4;
+	grid-template-columns: repeat(7, minmax(auto, 200px));
 }
 
 .imagesWrap {
+	grid-column: span 3;
 	display: grid;
+	align-self: center;
 }
-
-.infoWrap {
+.infoWrap{
 	grid-column: span 2;
-	grid-row: span: 5;
+	grid-row: span 4;
+	padding: 0px 0px 0px 2vw;
 }
-
 .mainImg {
 	grid-row: span 3;
-	grid-column: span 4;
+	grid-column: span 3;
+	text-align: center;
+}
+
+.mainImg>img {
+	max-width: 100%;
+	max-height: 65vh;
 }
 
 .slideMainImg {
-	grid-column: span 4;
+	grid-column: span 3;
+	text-align: center;
+	margin: -4vh 0px 0px 0px;
+}
+
+.slideMainImg>img {
+	max-height: 100px;
+	max-width: 100%;
+	margin: 0px 0.5vw;
+}
+
+.slideMainImg>img:nth-child(2) {
+	max-height: 130px;
 }
 
 
@@ -554,7 +569,13 @@ main.openItem {
 
 /* footer */
 
+main {
+	padding-bottom: 20vh;
+}
 footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	background-color: #212127;

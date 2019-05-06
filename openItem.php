@@ -1,8 +1,14 @@
 <main class="openItem">
 	<div class="openItemWrap">
 		<div class="imagesWrap">
-			<div class="mainImg"></div>
-			<div class="slideMainImg"></div>
+			<div class="mainImg">
+				<img src="images/shop/items/1-1.jpg" alt="">
+			</div>
+			<div class="slideMainImg">
+				<img src="images/shop/items/1-2.jpg" alt="">
+				<img src="images/shop/items/1-3.jpg" alt="">
+				<img src="images/shop/items/1-4.jpg" alt="">
+			</div>
 		</div>
 		<div class="infoWrap">
 			<p>Заголовок</p>
