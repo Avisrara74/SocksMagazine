@@ -477,6 +477,78 @@ main.openItem {
 	grid-row: span 4;
 }
 
+.imagesWrap {
+	display: grid;
+}
+
+.infoWrap {
+	grid-column: span 2;
+	grid-row: span: 5;
+}
+
+.mainImg {
+	grid-row: span 3;
+	grid-column: span 4;
+}
+
+.slideMainImg {
+	grid-column: span 4;
+}
+
+
+
+/* ------------------------------------ */
+
+.option {
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+.check {
+	padding-left: 1.2em;
+}
+
+.check__input {
+	position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.check__box {
+	position: absolute;
+	margin-left: -1.2em;
+	width: 1em;
+	height: 1em;
+	background-image: url(../images/checkbox/off.svg);
+}
+
+/* Checked */
+
+.check__input:checked + .check__box {
+	background-image: url(../images/checkbox/on.svg);
+}
+
+/* Focused */
+
+.check__input:focus + .check__box {
+	background-image: url(../images/checkbox/off-focused.svg);
+}
+
+.check__input:checked:focus + .check__box {
+	background-image: url(../images/checkbox/on-focused.svg);
+}
+
+/* Disabled */
+
+.check__input:disabled + .check__box {
+	background-image: url(../images/checkbox/off-disabled.svg);
+}
+
+.check__input:checked:disabled + .check__box {
+	background-image: url(../images/checkbox/on-disabled.svg);
+}
+
 
 
 

@@ -1,14 +1,33 @@
 <main class="openItem">
 	<div class="openItemWrap">
-		<div>
+		<div class="imagesWrap">
 			<div class="mainImg"></div>
 			<div class="slideMainImg"></div>
 		</div>
-		<div>
+		<div class="infoWrap">
 			<p>Заголовок</p>
 			<p>Цена</p>
 			<p>тут чекбоксы</p>
-			<button>Добавить в корзину</button>
+			<label class="check option">
+				<input class="check__input" type="checkbox">
+				<span class="check__box"></span>
+				Первый
+			</label>
+			<label class="check option">
+				<input class="check__input" type="checkbox">
+				<span class="check__box"></span>
+				Второй
+			</label>
+			<label class="check option">
+				<input class="check__input" type="checkbox">
+				<span class="check__box"></span>
+				Третий
+			</label>
+			<label class="check option">
+				<input class="check__input" type="checkbox">
+				<span class="check__box"></span>
+				Четвёртый
+			</label>
 		</div>
 	</div>
 </main>
