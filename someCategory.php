@@ -6,7 +6,7 @@
 		<a href="#">
 		<div>
 			<div class="imgWrap">
-				<img src="images/shop/items/1.jpg" alt="" class="increase_big">
+				<img src="images/shop/items/2-1.jpg" alt="" class="increase_big">
 			</div>
 			<p>Тестовый какой то текст</p>
 			<p>260,00 р.</p>
