@@ -5,15 +5,13 @@
 				<img src="images/shop/items/1-2.jpg" alt="">
 			</div>
 			<div class="slideMainImg">
-				<div>
-					<a href="#" class="btn-arrow-left"></a>
+				<div href="#" class="btn-arrow-left"></div>
+				<div class="slideWrap">
+					<img src="images/shop/items/1-2.jpg" alt="">
+					<img src="images/shop/items/1-3.jpg" alt="">
+					<img src="images/shop/items/1-4.jpg" alt="">
 				</div>
-				<img src="images/shop/items/1-2.jpg" alt="">
-				<img src="images/shop/items/1-3.jpg" alt="">
-				<img src="images/shop/items/1-4.jpg" alt="">
-				<div>
-					<a href="#" class="btn-arrow-right"></a>
-				</div>
+				<div href="#" class="btn-arrow-right"></div>
 			</div>
 		</div>
 		<div class="infoWrap">

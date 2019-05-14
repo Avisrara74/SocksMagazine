@@ -552,19 +552,24 @@ main.openItem {
 
 .slideMainImg {
 	grid-column: span 3;
-	text-align: center;
-	margin: -4vh 0px 0px 0px;
 	display: grid;
+	align-items: center;
+	justify-items: center;
+	margin: -4vh 0px 0px 0px;
 	grid-template-columns: repeat(5, 1fr);
 }
 
-.slideMainImg>img {
-	max-height: 11vh;
-	max-width: 100%;
-	margin: 0px 0.5vw;
+.slideWrap {
+	grid-column: span 3;
+	z-index: 3;
 }
 
-.slideMainImg>img:nth-child(3) {
+.slideWrap>img {
+	max-height: 11vh;
+	max-width: 100%;
+}
+
+.slideWrap>img:nth-child(2) {
 	max-height: 16vh;
 }
 
@@ -576,13 +581,13 @@ main.openItem {
     height: 0px;
     background: white;
     color: #fff;
-    top: 53%;
+    top: 17%;
 }
 .btn-arrow-left {
-	left: 100%;
+	justify-self: end; 
 }
 .btn-arrow-right {
-
+	justify-self: start; 
 }
 
 .btn-arrow-left:after, .btn-arrow-left:before, 
@@ -596,11 +601,11 @@ main.openItem {
 }
 .btn-arrow-left:after, .btn-arrow-right:after {
 	background: lightgray;
-    z-index: -2;	
+    z-index: 1;	
 }
 .btn-arrow-left:before, .btn-arrow-right:before {
 	background: inherit;
-    z-index: -1;
+    z-index: 2;
 }
 .btn-arrow-left:after { 
     left: -20px;       
@@ -609,16 +614,17 @@ main.openItem {
     left: -10px;
 }
 .btn-arrow-right:after { 
-    left: 20px;    	    
+    left: -10px;    	    
 }
 .btn-arrow-right:before {
-    left: 10px;
+    left: -20px;
 }
 .btn-arrow-left:hover:after, .btn-arrow-right:hover:after {
 	background: gray;
 	-moz-transition: all 0.2s ease-out;
 	-o-transition: all 0.2s ease-out;
 	-webkit-transition: all 0.2s ease-out;
+	cursor: pointer;
 }
 
 .alsoLike {
