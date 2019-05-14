@@ -41,7 +41,7 @@
 		</div>
 		<div class="alsoLike">
 			<div>
-				<img src="images/shop/items/1-1.jpg" alt="">
+				<img src="images/shop/items/1-2.jpg" alt="">
 				<p>Название</p>
 				<p>2500.00р</p>
 			</div>
