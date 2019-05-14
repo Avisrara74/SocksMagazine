@@ -554,6 +554,8 @@ main.openItem {
 	grid-column: span 3;
 	text-align: center;
 	margin: -4vh 0px 0px 0px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
 }
 
 .slideMainImg>img {
@@ -562,8 +564,61 @@ main.openItem {
 	margin: 0px 0.5vw;
 }
 
-.slideMainImg>img:nth-child(2) {
+.slideMainImg>img:nth-child(3) {
 	max-height: 16vh;
+}
+
+.btn-arrow-left,
+.btn-arrow-right {
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 0px;
+    background: white;
+    color: #fff;
+    top: 53%;
+}
+.btn-arrow-left {
+	left: 100%;
+}
+.btn-arrow-right {
+
+}
+
+.btn-arrow-left:after, .btn-arrow-left:before, 
+.btn-arrow-right:after, .btn-arrow-right:before {
+	content:'';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-top: -25px;
+    transform: rotate(45deg);
+}
+.btn-arrow-left:after, .btn-arrow-right:after {
+	background: lightgray;
+    z-index: -2;	
+}
+.btn-arrow-left:before, .btn-arrow-right:before {
+	background: inherit;
+    z-index: -1;
+}
+.btn-arrow-left:after { 
+    left: -20px;       
+}
+.btn-arrow-left:before {
+    left: -10px;
+}
+.btn-arrow-right:after { 
+    left: 20px;    	    
+}
+.btn-arrow-right:before {
+    left: 10px;
+}
+.btn-arrow-left:hover:after, .btn-arrow-right:hover:after {
+	background: gray;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
 }
 
 .alsoLike {

@@ -5,9 +5,15 @@
 				<img src="images/shop/items/1-2.jpg" alt="">
 			</div>
 			<div class="slideMainImg">
+				<div>
+					<a href="#" class="btn-arrow-left"></a>
+				</div>
 				<img src="images/shop/items/1-2.jpg" alt="">
 				<img src="images/shop/items/1-3.jpg" alt="">
 				<img src="images/shop/items/1-4.jpg" alt="">
+				<div>
+					<a href="#" class="btn-arrow-right"></a>
+				</div>
 			</div>
 		</div>
 		<div class="infoWrap">
@@ -41,7 +47,7 @@
 		</div>
 		<div class="alsoLike">
 			<div>
-				<img src="images/shop/items/1-2.jpg" alt="">
+				<img src="images/shop/items/1-1.jpg" alt="">
 				<p>Название</p>
 				<p>2500.00р</p>
 			</div>
