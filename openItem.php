@@ -2,17 +2,19 @@
 	<div class="openItemWrap">
 		<div class="imagesWrap">
 			<div class="mainImg">
-				<img src="images/shop/items/1-2.jpg" alt="">
+				<img src="images/shop/items/1-3.jpg" alt="" id="mainImg">
 			</div>
 			<div class="slideMainImg">
-				<div href="#" class="btn-arrow-left"></div>
+				<div href="#" class="btn-arrow-left" id="prev"></div>
 				<div class="slideWrap">
-					<img src="images/shop/items/1-2.jpg" alt="">
-					<img src="images/shop/items/1-3.jpg" alt="">
-					<img src="images/shop/items/1-4.jpg" alt="">
+					<img src="images/shop/items/1-2.jpg" alt="" class="slide">
+					<img src="images/shop/items/1-3.jpg" alt="" class="slide" id="currentImg">
+					<img src="images/shop/items/1-4.jpg" alt="" class="slide">
 				</div>
-				<div href="#" class="btn-arrow-right"></div>
+				<div href="#" class="btn-arrow-right" id="next"></div>
+				<script  src="js/func.js"></script>
 			</div>
+
 		</div>
 		<div class="infoWrap">
 			<p>Заголовок</p>

@@ -562,6 +562,8 @@ main.openItem {
 .slideWrap {
 	grid-column: span 3;
 	z-index: 3;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .slideWrap>img {
@@ -569,8 +571,20 @@ main.openItem {
 	max-width: 100%;
 }
 
+.slideWrap>img:nth-child(1) {
+	justify-self: end;
+	align-self: end;
+}
+
 .slideWrap>img:nth-child(2) {
 	max-height: 16vh;
+	border: 3px solid #454253;
+	border-radius: 15px;
+}
+
+.slideWrap>img:nth-child(3) {
+	justify-self: start;
+	align-self: end;
 }
 
 .btn-arrow-left,
