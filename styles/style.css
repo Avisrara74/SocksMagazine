@@ -578,59 +578,26 @@ main.openItem {
 .btn-arrow-left,
 .btn-arrow-right {
     position: relative;
-    display: block;
-    width: 0px;
-    height: 0px;
-    background: white;
-    color: #fff;
+    cursor: pointer;
+    width: auto;
+    font-weight: bold;
+    font-size: 3em;
+    border-radius: 0 3px 3px 0;
     align-self: center;
+    color: lightgray;
 }
+
 .btn-arrow-left {
 	justify-self: end; 
 }
 .btn-arrow-right {
 	justify-self: start; 
 }
-
-.btn-arrow-left:after, .btn-arrow-left:before, 
-.btn-arrow-right:after, .btn-arrow-right:before {
-	content:'';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    margin-top: -25px;
-    transform: rotate(45deg);
-}
-.btn-arrow-left:after, .btn-arrow-right:after {
-	background: lightgray;
-    z-index: 1;	
-}
-.btn-arrow-left:before, .btn-arrow-right:before {
-	background: inherit;
-    z-index: 2;
-}
-.btn-arrow-left:after { 
-    left: -20px;       
-}
-.btn-arrow-left:before {
-    left: -10px;
-}
-.btn-arrow-right:after { 
-    left: -10px;    	    
-}
-.btn-arrow-right:before {
-    left: -20px;
-}
-.btn-arrow-left:hover:after, .btn-arrow-right:hover:after {
-	background: gray;
-	-moz-transition: all 0.2s ease-out;
-	-o-transition: all 0.2s ease-out;
-	-webkit-transition: all 0.2s ease-out;
-	cursor: pointer;
-}
-
-.btn-arrow-left:hover:before, .btn-arrow-right:hover:before {
-	cursor: pointer;
+.btn-arrow-left:hover, .btn-arrow-right:hover {
+	color: gray;
+	-moz-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	-webkit-transition: all 0.4s ease-out;
 }
 
 .alsoLike {
