@@ -69,49 +69,52 @@
 	<div class="alsoLikeMobile">
 		<h1 class="alsoLikeMobileText">Рекомендуемые товары: </h3>
 		<div class="alsoLikeMobileItems">
-				<div>
-					<a href="#">
-						<img src="images/shop/items/1-1.jpg" alt="" class="increase_big increase">
-						<p>Название</p>
-						<p>2500.00р</p>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="images/shop/items/2-1.jpg" alt="" class="increase_big increase">
-						<p>Название</p>
-						<p>2500.00р</p>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="images/shop/items/3-1.jpg" alt="" class="increase_big increase">
-						<p>Название</p>
-						<p>2500.00р</p>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="images/shop/items/1-1.jpg" alt="" class="increase_big increase">
-						<p>Название</p>
-						<p>2500.00р</p>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="images/shop/items/2-1.jpg" alt="" class="increase_big increase">
-						<p>Название</p>
-						<p>2500.00р</p>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="images/shop/items/3-1.jpg" alt="" class="increase_big increase">
-						<p>Название</p>
-						<p>2500.00р</p>
-					</a>
-				</div>
+			<div>
+				<a href="#">
+					<img src="images/shop/items/1-1.jpg" alt="" class="increase_big increase">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
 			</div>
+			<div>
+				<a href="#">
+					<img src="images/shop/items/2-1.jpg" alt="" class="increase_big increase">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="images/shop/items/3-1.jpg" alt="" class="increase_big increase">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="images/shop/items/1-1.jpg" alt="" class="increase_big increase">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="images/shop/items/2-1.jpg" alt="" class="increase_big increase">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="images/shop/items/3-1.jpg" alt="" class="increase_big increase">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
+			</div>
+		</div>
 	</div>
-	
+	<div class="bottomButtons">
+		<a href="/index.php?page=search" class="searchLink"><div class="searchButton"><img src="/images/shop/search.png" title="Поиск"><p>Поиск</p></div></a>
+		<a href="#" class="basketLink"><div class="basketButton"><img src="/images/shop/shop-basket.png" title="Корзина"><p>Корзина</p></div></a>
+	</div>
 </main>

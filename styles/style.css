@@ -360,20 +360,24 @@ a:nth-child(6)>.content-img {
 	grid-gap: 70px;
 	justify-self: center;
 	margin: 10vh auto 0px auto;
+	font-family: 'Russo One', sans-serif;
 }
 
 .bottomButtons a {
 	text-decoration: none;
-	color: #68497a;
+	color: #68497a !important;
 	text-align: center;
 }
 .bottomButtons a:hover {
-	color: #00ddff;
-	-moz-transition: all 0.2s ease-out;
-	-o-transition: all 0.2s ease-out;
-	-webkit-transition: all 0.2s ease-out;
+	color: #00ddff !important;
+	-moz-transition: all 0.2s ease-out !important;
+	-o-transition: all 0.2s ease-out !important;
+	-webkit-transition: all 0.2s ease-out !important;
 }
-
+.openItem>.bottomButtons {
+	margin: 0px auto 10vh auto;
+	width: 250px;
+}
 
 .increase_low:hover{
 	-webkit-transform: scale(1.03);

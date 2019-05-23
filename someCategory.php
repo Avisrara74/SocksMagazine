@@ -3,7 +3,7 @@
 	<div class="categoryItems">
 		<?php for ($i=0; $i <= 7; $i++) { 
 		echo '
-		<a href="#">
+		<a href="index.php?page=openItem">
 		<div>
 			<div class="imgWrap">
 				<img src="images/shop/items/2-1.jpg" alt="" class="increase_big">
