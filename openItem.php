@@ -45,21 +45,21 @@
 		<div class="alsoLike">
 			<div>
 				<a href="#">
-					<img src="images/shop/items/1-1.jpg" alt="">
+					<img src="images/shop/items/1-1.jpg" alt="" class="increase_big increase">
 					<p>Название</p>
 					<p>2500.00р</p>
 				</a>
 			</div>
 			<div>
 				<a href="#">
-					<img src="images/shop/items/2-1.jpg" alt="">
+					<img src="images/shop/items/2-1.jpg" alt="" class="increase_big increase">
 					<p>Название</p>
 					<p>2500.00р</p>
 				</a>
 			</div>
 			<div>
 				<a href="#">
-					<img src="images/shop/items/3-1.jpg" alt="">
+					<img src="images/shop/items/3-1.jpg" alt="" class="increase_big increase">
 					<p>Название</p>
 					<p>2500.00р</p>
 				</a>
@@ -71,42 +71,42 @@
 		<div class="alsoLikeMobileItems">
 				<div>
 					<a href="#">
-						<img src="images/shop/items/1-1.jpg" alt="">
+						<img src="images/shop/items/1-1.jpg" alt="" class="increase_big increase">
 						<p>Название</p>
 						<p>2500.00р</p>
 					</a>
 				</div>
 				<div>
 					<a href="#">
-						<img src="images/shop/items/2-1.jpg" alt="">
+						<img src="images/shop/items/2-1.jpg" alt="" class="increase_big increase">
 						<p>Название</p>
 						<p>2500.00р</p>
 					</a>
 				</div>
 				<div>
 					<a href="#">
-						<img src="images/shop/items/3-1.jpg" alt="">
+						<img src="images/shop/items/3-1.jpg" alt="" class="increase_big increase">
 						<p>Название</p>
 						<p>2500.00р</p>
 					</a>
 				</div>
 				<div>
 					<a href="#">
-						<img src="images/shop/items/1-1.jpg" alt="">
+						<img src="images/shop/items/1-1.jpg" alt="" class="increase_big increase">
 						<p>Название</p>
 						<p>2500.00р</p>
 					</a>
 				</div>
 				<div>
 					<a href="#">
-						<img src="images/shop/items/2-1.jpg" alt="">
+						<img src="images/shop/items/2-1.jpg" alt="" class="increase_big increase">
 						<p>Название</p>
 						<p>2500.00р</p>
 					</a>
 				</div>
 				<div>
 					<a href="#">
-						<img src="images/shop/items/3-1.jpg" alt="">
+						<img src="images/shop/items/3-1.jpg" alt="" class="increase_big increase">
 						<p>Название</p>
 						<p>2500.00р</p>
 					</a>

@@ -617,7 +617,7 @@ main.openItem {
 }
 
 .alsoLikeMobileItems {
-	padding: 0px 0px 10vh 0px;
+	padding: 1vh 0px 10vh 0px;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	text-align: center;
