@@ -2,19 +2,16 @@
 	<div class="openItemWrap">
 		<div class="imagesWrap">
 			<div class="mainImg">
-				<img src="images/shop/items/1-3.jpg" alt="" id="mainImg">
-			</div>
-			<div class="slideMainImg">
 				<div href="#" class="btn-arrow-left" id="prev"></div>
-				<div class="slideWrap">
-					<img src="images/shop/items/1-2.jpg" alt="" class="slide">
-					<img src="images/shop/items/1-3.jpg" alt="" class="slide" id="currentImg">
-					<img src="images/shop/items/1-4.jpg" alt="" class="slide">
+				<div>
+					<img src="images/shop/items/1-1.jpg" alt="" class="slide">
+					<img src="images/shop/items/1-2.jpg" alt="" class="slide displayNone">
+					<img src="images/shop/items/1-3.jpg" alt="" class="slide displayNone">
+					<img src="images/shop/items/1-4.jpg" alt="" class="slide displayNone">
 				</div>
 				<div href="#" class="btn-arrow-right" id="next"></div>
 				<script  src="js/func.js"></script>
 			</div>
-
 		</div>
 		<div class="infoWrap">
 			<p>Заголовок</p>
@@ -47,20 +44,71 @@
 		</div>
 		<div class="alsoLike">
 			<div>
-				<img src="images/shop/items/1-1.jpg" alt="">
-				<p>Название</p>
-				<p>2500.00р</p>
+				<a href="#">
+					<img src="images/shop/items/1-1.jpg" alt="">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
 			</div>
 			<div>
-				<img src="images/shop/items/2-1.jpg" alt="">
-				<p>Название</p>
-				<p>2500.00р</p>
+				<a href="#">
+					<img src="images/shop/items/2-1.jpg" alt="">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
 			</div>
 			<div>
-				<img src="images/shop/items/3-1.jpg" alt="">
-				<p>Название</p>
-				<p>2500.00р</p>
+				<a href="#">
+					<img src="images/shop/items/3-1.jpg" alt="">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
 			</div>
 		</div>
 	</div>
+	<h1 class="alsoLikeMobileText">Рекомендуемые товары: </h3>
+	<div class="alsoLikeMobile">
+			<div>
+				<a href="#">
+					<img src="images/shop/items/1-1.jpg" alt="">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="images/shop/items/2-1.jpg" alt="">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="images/shop/items/3-1.jpg" alt="">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="images/shop/items/1-1.jpg" alt="">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="images/shop/items/2-1.jpg" alt="">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="images/shop/items/3-1.jpg" alt="">
+					<p>Название</p>
+					<p>2500.00р</p>
+				</a>
+			</div>
+		</div>
 </main>
