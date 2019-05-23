@@ -66,49 +66,52 @@
 			</div>
 		</div>
 	</div>
-	<h1 class="alsoLikeMobileText">Рекомендуемые товары: </h3>
 	<div class="alsoLikeMobile">
-			<div>
-				<a href="#">
-					<img src="images/shop/items/1-1.jpg" alt="">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
+		<h1 class="alsoLikeMobileText">Рекомендуемые товары: </h3>
+		<div class="alsoLikeMobileItems">
+				<div>
+					<a href="#">
+						<img src="images/shop/items/1-1.jpg" alt="">
+						<p>Название</p>
+						<p>2500.00р</p>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="images/shop/items/2-1.jpg" alt="">
+						<p>Название</p>
+						<p>2500.00р</p>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="images/shop/items/3-1.jpg" alt="">
+						<p>Название</p>
+						<p>2500.00р</p>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="images/shop/items/1-1.jpg" alt="">
+						<p>Название</p>
+						<p>2500.00р</p>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="images/shop/items/2-1.jpg" alt="">
+						<p>Название</p>
+						<p>2500.00р</p>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="images/shop/items/3-1.jpg" alt="">
+						<p>Название</p>
+						<p>2500.00р</p>
+					</a>
+				</div>
 			</div>
-			<div>
-				<a href="#">
-					<img src="images/shop/items/2-1.jpg" alt="">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
-			</div>
-			<div>
-				<a href="#">
-					<img src="images/shop/items/3-1.jpg" alt="">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
-			</div>
-			<div>
-				<a href="#">
-					<img src="images/shop/items/1-1.jpg" alt="">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
-			</div>
-			<div>
-				<a href="#">
-					<img src="images/shop/items/2-1.jpg" alt="">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
-			</div>
-			<div>
-				<a href="#">
-					<img src="images/shop/items/3-1.jpg" alt="">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
-			</div>
-		</div>
+	</div>
+	
 </main>
