@@ -67,7 +67,7 @@
 		</div>
 	</div>
 	<div class="alsoLikeMobile">
-		<h1 class="alsoLikeMobileText">Рекомендуемые товары: </h3>
+		<h1 class="alsoLikeMobileText">Вам может понравиться: </h3>
 		<div class="alsoLikeMobileItems">
 			<div>
 				<a href="#">
