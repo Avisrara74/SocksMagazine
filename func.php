@@ -11,6 +11,8 @@ $page = $_GET['page'];
 		require('pay.php');
 	} elseif ($page == 'openItem') {
 		require('openItem.php');
+	} elseif ($page == 'shopBasket') {
+		require('shopBasket.php');
 	}
 
 	  elseif ($page == 'Наборы носков') {

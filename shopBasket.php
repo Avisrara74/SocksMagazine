@@ -1,53 +1,61 @@
 <main class="shopBasket">
-	<p></p>
+	<p> Не забудьте добавить <a href="">коробочку</a>, чтобы красиво упаковать ваши покупки</p>
 	<div class="shopBasketContentWrap">
 		<div class="basketLeftContent">
-			<h1></h1>
 			<div class="basketContentWrap">
+				<div><h1>Корзина</h1></div>
 
 				<div class="basketItemsWrap">
 					<div class="basketItem">
-						<img src="" alt="">
+						<a href="#">
+							<img src="images/shop/items/1-1.jpg" alt="" class="increase_big increase">
+						</a>
 						<div class="basketItemInfo">
 							<div>
-								<h4></h4>
 								<div>
-									&times;
+									<a href="#">
+										<h4>Тут название наших любимых носков</h4>
+									</a>
 								</div>
+								<span class="cross">&times;</span>	
 							</div>
-							<h4></h4>
+							<h4>Выберите размер: 35-39</h4>
 							<div>
 								<select name="" id="">
-								<option value="">1</option>
-								<option value="">2</option>
-								<option value="">3</option>
-								<option value="">4</option>
-								<option value="">5</option>
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+									<option value="">4</option>
+									<option value="">5</option>
 								</select>	
-								<h4></h4>
+								<span>2 000,00 р.</span>
 							</div>	
 						</div>
 					</div>
 
 					<div class="basketItem">
-						<img src="" alt="">
+						<a href="#">
+							<img src="images/shop/items/1-2.jpg" alt="" class="increase_big increase">
+						</a>
 						<div class="basketItemInfo">
 							<div>
-								<h4></h4>
 								<div>
-									&times;
+									<a href="#">
+										<h4>Тут название наших любимых носков</h4>
+									</a>
 								</div>
+								<span class="cross">&times;</span>	
 							</div>
-							<h4></h4>
+							<h4>Выберите размер: 35-39</h4>
 							<div>
 								<select name="" id="">
-								<option value="">1</option>
-								<option value="">2</option>
-								<option value="">3</option>
-								<option value="">4</option>
-								<option value="">5</option>
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+									<option value="">4</option>
+									<option value="">5</option>
 								</select>	
-								<h4></h4>
+								<span>2 000,00 р.</span>
 							</div>	
 						</div>
 					</div>
@@ -67,7 +75,7 @@
 			<div>
 				<h1>Проверка</h1>
 				<p>Введите ваш email. На этот email вы будете получать уведомления об обновлении статуса товара </p>
-				<input type="text">
+				<input type="text" class="printEmail" placeholder="Введите ваш Email">
 				<label class="check option">
 					<input class="check__input" type="checkbox">
 					<span class="check__box"></span>
@@ -96,57 +104,12 @@
 			
 		</div>
 
-		<div class="alsoLikeMobile">
-			<h1 class="alsoLikeMobileText">Вам может понравиться: </h3>
-			<div class="alsoLikeMobileItems">
-				<div>
-					<a href="#">
-						<img src="images/shop/items/1-1.jpg" alt="" class="increase_big increase">
-						<p>Название</p>
-						<p>2500.00р</p>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="images/shop/items/2-1.jpg" alt="" class="increase_big increase">
-						<p>Название</p>
-						<p>2500.00р</p>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="images/shop/items/3-1.jpg" alt="" class="increase_big increase">
-						<p>Название</p>
-						<p>2500.00р</p>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="images/shop/items/1-1.jpg" alt="" class="increase_big increase">
-						<p>Название</p>
-						<p>2500.00р</p>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="images/shop/items/2-1.jpg" alt="" class="increase_big increase">
-						<p>Название</p>
-						<p>2500.00р</p>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="images/shop/items/3-1.jpg" alt="" class="increase_big increase">
-						<p>Название</p>
-						<p>2500.00р</p>
-					</a>
-				</div>
-			</div>
-		</div>
 		
-		<div class="bottomButtons">
-			<a href="/index.php?page=search" class="searchLink"><div class="searchButton"><img src="/images/shop/search.png" title="Поиск"><p>Поиск</p></div></a>
-			<a href="#" class="basketLink"><div class="basketButton"><img src="/images/shop/shop-basket.png" title="Корзина"><p>Корзина</p></div></a>
-		</div>
+
+		
+	</div>
+	<div class="bottomButtons">
+		<a href="/index.php?page=search" class="searchLink"><div class="searchButton"><img src="/images/shop/search.png" title="Поиск"><p>Поиск</p></div></a>
+		<a href="#" class="basketLink"><div class="basketButton"><img src="/images/shop/shop-basket.png" title="Корзина"><p>Корзина</p></div></a>
 	</div>
 </main>

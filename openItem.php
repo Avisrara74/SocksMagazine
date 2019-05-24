@@ -38,9 +38,11 @@
 				44-46
 			</label>
 			<br>
-			<span>Количество:</span>
-			<input type="number" value="1" class="num_count">
-			<input type="button" value="Добавить в корзину" class="bug_button">
+			<form action="/index.php?page=shopBasket" method="POST">
+				<span>Количество:</span>
+				<input type="number" value="1" class="num_count">
+				<input type="submit" value="Добавить в корзину" class="bug_button">
+			</form>
 		</div>
 		<div class="alsoLike">
 			<div>
