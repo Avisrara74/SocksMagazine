@@ -45,7 +45,7 @@
 	<footer>
 		<div>BBSocks</div>
 		<div>
-			<span>+7 982 325 70 59</span>
+			<span>+5 666 777 88 99</span>
 			<br>
 			<ul>
 				<li><a href="/index.php?page=delivery">Доставка</a></li>
