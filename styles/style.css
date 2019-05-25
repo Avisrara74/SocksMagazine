@@ -364,7 +364,6 @@ a:nth-child(6)>.content-img {
 	grid-template-rows: 1fr;
 	grid-gap: 70px;
 	justify-self: center;
-	margin: 10vh auto 10vh auto;
 	font-family: 'Russo One', sans-serif;
 	margin: 10vh auto 10vh auto;
 	width: 250px;
@@ -811,8 +810,16 @@ main.shopBasket {
 	height: 50px;
 	width: 90%;
 	background-color: #fbfbfb;
+	border: 1px solid #abbbc8;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.08) inset;
 	color: #999;
 	transition: background-color 0.15s ease-out 0s;
+	border-radius: 5px;
+}
+
+.printEmail:hover, .printEmail:focus{
+	box-shadow: none;
+	background-color: white;
 }
 
 .basketRightContent>div:last-child>div:first-child {
@@ -991,6 +998,22 @@ footer>div:nth-child(3)>p:last-child {
 	}
 }
 
+@media (max-width: 900px) {
+	.shopBasketContentWrap {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.basketItem {
+		grid-template-columns: 1fr;
+		margin-top: 1.5vh;
+	}
+	.basketItem>a>img {
+		display: none;
+	}
+	.cross {
+		padding-top: 0px;
+	}
+}
+
 @media (max-width: 890px) {
 	footer {
 		grid-template-columns: repeat(2, 1fr);
@@ -1116,6 +1139,43 @@ footer>div:nth-child(3)>p:last-child {
 	.recomendationItems>div:nth-child(4) , .recomendationItems>div:nth-child(5) , .recomendationItems>div:nth-child(6) {
 		display: none;
 	}
+
+	.shopBasketContentWrap {
+		grid-template-columns: 1fr;
+		grid-template-rows: minmax(550px, 600px) 1fr;
+	}
+	.basketItem {
+		grid-template-columns: 1fr 4fr;
+	}
+	.basketItem>a>img {
+		display: block;
+	}
+	.cross {
+		padding-top: 10px;
+	}
+	.basketItemInfo>div:first-child>div, .basketItemInfo>div:last-child>h4 {
+    	align-self: center;
+	}
+	.basketLeftContent {
+		max-height: 450px;
+	}
+	.basketRightContent {
+		padding: 0px;
+		margin-top: -10vh;
+	}
+	.basketRightContent>div>h1 {
+		display: none;
+	}
+	.basketPriceInfo>h4:last-child {
+		display: none;
+	}
+	main.shopBasket {
+		margin-top: 5vh;
+	}
+	.bottomButtons {
+		margin-bottom: 15vh;
+	}
+
 }
 
 @media (max-width: 576px) {
@@ -1127,6 +1187,30 @@ footer>div:nth-child(3)>p:last-child {
 	}
 	footer>div:first-child {
 		display: none;
+	}
+}
+
+@media (max-width: 568px) {
+	.cross {
+		padding-top: 0px;
+	}
+}
+
+@media (max-width: 530px) {
+	.basketRightContent {
+		margin-top: -15vh;
+	}
+}
+
+@media (max-width: 500px) {
+	.basketRightContent {
+		margin-top: -17vh;
+	}
+}
+
+@media (max-width: 465px) {
+	.cross {
+		margin-top: -3px;
 	}
 }
 
