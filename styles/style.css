@@ -12,6 +12,10 @@
 	font-size: 18px;
 }
 
+.opacity0 {
+	opacity: 0;
+}
+
 .link-style-fix {
 	color: white;
 	font-style: none;

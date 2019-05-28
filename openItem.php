@@ -2,14 +2,14 @@
 	<div class="openItemWrap">
 		<div class="imagesWrap">
 			<div class="mainImg">
-				<div href="#" class="btn-arrow-left" id="prev">&#10094</div>
+				<div href="#" class="btn-arrow-left opacity0" id="prev">&#10094</div>
 				<div>
 					<img src="images/shop/items/1-1.jpg" alt="" class="slide">
 					<img src="images/shop/items/1-2.jpg" alt="" class="slide displayNone">
 					<img src="images/shop/items/1-3.jpg" alt="" class="slide displayNone">
 					<img src="images/shop/items/1-4.jpg" alt="" class="slide displayNone">
 				</div>
-				<div href="#" class="btn-arrow-right" id="next">&#10095</div>
+				<div href="#" class="btn-arrow-right opacity0" id="next">&#10095</div>
 				<script  src="js/func.js"></script>
 			</div>
 		</div>
@@ -20,22 +20,12 @@
 			<label class="check option">
 				<input class="check__input" type="checkbox">
 				<span class="check__box"></span>
-				35-37
+				35-39
 			</label>
 			<label class="check option">
 				<input class="check__input" type="checkbox">
 				<span class="check__box"></span>
-				38-40
-			</label>
-			<label class="check option">
-				<input class="check__input" type="checkbox">
-				<span class="check__box"></span>
-				41-43
-			</label>
-			<label class="check option">
-				<input class="check__input" type="checkbox">
-				<span class="check__box"></span>
-				44-46
+				40-44
 			</label>
 			<br>
 			<form action="/index.php?page=shopBasket" method="POST">

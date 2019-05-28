@@ -3,7 +3,22 @@ let next = document.getElementById("next");
 let slides = document.getElementsByClassName("slide");
 let currentImg = 0;
 
+
+
+
 // ...............................
+
+
+
+
+function ready() {
+	if (slides.length >= 2) {
+		prev.classList.remove("opacity0");
+		next.classList.remove("opacity0");
+	} 
+}
+
+document.addEventListener("DOMContentLoaded", ready);
 
 function slider() {
 	for (let i = 0; i < slides.length; i++) {
