@@ -34,7 +34,9 @@ $page = $_GET['page'];
 		require('someCategory.php');
 	} elseif ($page == 'Подарочные коробки') {
 		require('someCategory.php');
-	}
+	} elseif (is_numeric($page)) {
+		require('openItem.php');
+	} 
 
 
 // get nav-items
@@ -48,6 +50,19 @@ function GET_navSomeProducts ($nav) {
 	$navSomeProducts = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 	return $navSomeProducts; 
+}
+
+// get open-item
+function GET_openItem ($product_id) {
+	global $connection;
+	$sql = "SELECT product.id, images.way, product.title, 
+	product.price_rub, product.35_39_counter, product.40_44_counter
+		FROM product
+		INNER JOIN images ON images.id_product = product.id WHERE '$product_id' = product.id";
+	$result = mysqli_query($connection, $sql);
+	$openItem = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+	return $openItem; 
 }
 
 ?>

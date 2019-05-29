@@ -1,21 +1,23 @@
 <main class="openItem">
+	<?php 
+		$nav = $_GET['page'];
+		$openItem = GET_openItem($nav);
+	?>
 	<div class="openItemWrap">
 		<div class="imagesWrap">
 			<div class="mainImg">
 				<div href="#" class="btn-arrow-left opacity0" id="prev">&#10094</div>
 				<div>
-					<img src="images/shop/items/1-1.jpg" alt="" class="slide">
-					<img src="images/shop/items/1-2.jpg" alt="" class="slide displayNone">
-					<img src="images/shop/items/1-3.jpg" alt="" class="slide displayNone">
-					<img src="images/shop/items/1-4.jpg" alt="" class="slide displayNone">
+					<img src="<?php echo $openItem[0]['way'] ?>" alt="" class="slide">
+					<img src="<?php echo $openItem[1]['way'] ?>" alt="" class="slide displayNone">
 				</div>
 				<div href="#" class="btn-arrow-right opacity0" id="next">&#10095</div>
 				<script  src="js/func.js"></script>
 			</div>
 		</div>
 		<div class="infoWrap">
-			<p>Заголовок</p>
-			<p>5000.00р</p>
+			<p><?php echo $openItem[0]['title'] ?></p>
+			<p><?php echo $openItem[0]['price_rub'] ?>,00 р.</p>
 			<p>Выберите размер</p>
 			<label class="check option">
 				<input class="check__input" type="checkbox">

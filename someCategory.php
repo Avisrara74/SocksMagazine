@@ -7,7 +7,7 @@
 	<div class="categoryItems">
 		<?php 
 		foreach ($navItem as $navItems): ?>
-		<a href="index.php?page=openItem">
+		<a href="index.php?page=<?php echo $navItems['id'] ?>">
 		<div>
 			<div class="imgWrap">
 				<img src="<?php echo $navItems['way'] ?>" alt="" class="increase_middle increase">
