@@ -1,23 +1,25 @@
 <main class="categoryMain">
-	<h1>Какой-то заголовок</h1>
+	<?php 
+		$nav = $_GET['page'];
+		$navItem = GET_navSomeProducts($nav);
+	?>
+	<h1><?php echo $nav ?></h1>
 	<div class="categoryItems">
-		<?php for ($i=0; $i <= 7; $i++) { 
-		echo '
+		<?php 
+		foreach ($navItem as $navItems): ?>
 		<a href="index.php?page=openItem">
 		<div>
 			<div class="imgWrap">
-				<img src="images/shop/items/2-1.jpg" alt="" class="increase_big">
+				<img src="<?php echo $navItems['way'] ?>" alt="" class="increase_middle increase">
 			</div>
-			<p>Тестовый какой то текст</p>
-			<p>260,00 р.</p>
+			<p><?php echo $navItems['title'] ?></p>
+			<p><?php echo $navItems['price_rub'] ?>,00 руб.</p>
 			<div class="buttonWrap">
 				<button class="categoryElement">В корзину </button>
 			</div>
 		</div>
-		</a>	';
-		} ?>
-		
-
+		</a>	
+		<?php endforeach; ?>
 	</div>
 	<div class="bottomButtons">
 		<a href="/index.php?page=search" class="searchLink"><div class="searchButton"><img src="/images/shop/search.png" title="Поиск"><p>Поиск</p></div></a>
