@@ -1,3 +1,4 @@
+<?php include('./connectionDB.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
