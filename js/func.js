@@ -4,10 +4,12 @@ let slides = document.getElementsByClassName("slide");
 let currentImg = 0;
 
 
+					
+
+
 
 
 // ...............................
-
 
 
 
@@ -20,12 +22,19 @@ function ready() {
 
 document.addEventListener("DOMContentLoaded", ready);
 
+
+// first-element fix 
+slides[0].classList.remove("displayNone");
+
+
 function slider() {
 	for (let i = 0; i < slides.length; i++) {
 		slides[i].classList.add("displayNone");
 	}
 	slides[currentImg].classList.remove("displayNone");
 }
+
+
 
 prev.onclick = function() {
 	if ( (currentImg - 1) == -1) {
