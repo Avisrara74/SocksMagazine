@@ -19,7 +19,7 @@
 								</div>
 								<span class="cross">&times;</span>	
 							</div>
-							<h4>Выберите размер: 35-39</h4>
+							<h4></h4>
 							<div>
 								<select name="" id="">
 									<option value="">1</option>
@@ -46,7 +46,7 @@
 								</div>
 								<span class="cross">&times;</span>	
 							</div>
-							<h4>Выберите размер: 35-39</h4>
+							<h4></h4>
 							<div>
 								<select name="" id="">
 									<option value="">1</option>
