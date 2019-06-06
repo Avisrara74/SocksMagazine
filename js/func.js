@@ -8,16 +8,14 @@ let currentImg = 0;
 let shopBasket = {};
 let addToBasket = document.getElementById("addToBasket");
 
-
 addToBasket.onclick = function() {
 	let articul = $(this).attr('data-art');
-	if ((shopBasket[articul] != undefined) && (checkbox1.checked || checkbox2.checked)) {
+	if (shopBasket[articul] != undefined)  {
 		shopBasket[articul] += parseInt(num_count[0].value,10);
 	} else {
 		shopBasket[articul] = parseInt(num_count[0].value,10);
 	}
 	localStorage.setItem('shopBasket', JSON.stringify(shopBasket));
-	console.log(shopBasket);
 }
 
 function checkBasket() {
@@ -26,7 +24,6 @@ function checkBasket() {
 		shopBasket = JSON.parse(localStorage.getItem('shopBasket'));
 	}
 }
-checkBasket();
 
 
 
@@ -47,6 +44,7 @@ function ready() {
 		prev.classList.remove("opacity0");
 		next.classList.remove("opacity0");
 	} 
+	checkBasket();
 }
 
 document.addEventListener("DOMContentLoaded", ready);

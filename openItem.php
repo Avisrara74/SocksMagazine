@@ -19,73 +19,9 @@
 			<p><?php echo $openItem[0]['title'] ?></p>
 			<p><?php echo $openItem[0]['price_rub'] ?>,00 р.</p>
 			<form action="/index.php?page=shopBasket" method="POST">
-			<?php  
-			if (($openItem[0]["35_39_counter"] <= 0) and ($openItem[0]["40_44_counter"] <= 0)) {
-				echo '<p>Товара нет в наличии</p>';
-			}
-			else if (($openItem[0]["35_39_counter"] >= 1) and ($openItem[0]["40_44_counter"] >= 1)) {
-				echo '
-					<p>Выберите размер:</p>
-					<br>
-					<label class="check option">
-						<input class="check__input" data-art="35_39_counter" type="radio" required name="socksSize" id="checkbox1">
-						<span class="check__box"></span>
-						35-39
-					</label>
-					<label class="check option">
-						<input class="check__input" data-art="40_44_counter" type="radio" required name="socksSize" id="checkbox2">
-						<span class="check__box"></span>
-						40-44
-					</label>
-				';
-			}
-			else if($openItem[0]["35_39_counter"] >= 1) {
-				echo '
-					<p>Выберите размер:</p>
-					<br>
-					<label class="check option">
-						<input class="check__input" data-art="35_39_counter" type="radio" required name="socksSize" id="checkbox1">
-						<span class="check__box"></span>
-						35-39
-					</label>
-				';
-			}
-			else if($openItem[0]["40_44_counter"] >= 1) {
-				echo '
-					<p>Выберите размер:</p>
-					<br>
-					<label class="check option">
-						<input class="check__input" data-art="40_44_counter" type="radio" required name="socksSize" id="checkbox2">
-						<span class="check__box"></span>
-						40-44
-					</label>
-				';
-			}
-			?>
 			<br>
 				<span>Количество:</span>
-				<script>
-					
-					// change "max" on input counter
-					checkbox1.onclick = function checkboxChecked1() {
-						<?php $basketItemCount = $openItem[0]["35_39_counter"]; ?>;
-						num_count[0].setAttribute("max", <?php echo $basketItemCount ?>);
-						if (num_count[0].value > <?php echo $basketItemCount ?>) {
-							num_count[0].value = '<?php echo $basketItemCount ?>';
-						}
-
-					}
-					checkbox2.onclick = function checkboxChecked2() {
-						<?php $basketItemCount = $openItem[0]["40_44_counter"]; ?>;
-						num_count[0].setAttribute("max", <?php echo $basketItemCount ?>);
-						if (num_count[0].value > <?php echo $basketItemCount ?>) {
-							num_count[0].value = '<?php echo $basketItemCount ?>';
-						}
-					}
-					
-					
-				</script>
-				<input type="number" value="1" min="1" max="10" class="num_count">
+				<input type="number" value="1" min="1" max="<?php echo $openItem[0]['items'] ?>" class="num_count">
 				<input type="submit" id="addToBasket" value="Добавить в корзину" data-art="<?php echo $openItem[0]['id'] ?>" class="bug_button">
 			</form>
 		</div>

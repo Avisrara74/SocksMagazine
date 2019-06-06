@@ -56,7 +56,7 @@ function GET_navSomeProducts ($nav) {
 function GET_openItem ($product_id) {
 	global $connection;
 	$sql = "SELECT product.id, images.way, product.title, 
-	product.price_rub, product.35_39_counter, product.40_44_counter
+	product.price_rub, product.items
 		FROM product
 		INNER JOIN images ON images.id_product = product.id WHERE '$product_id' = product.id";
 	$result = mysqli_query($connection, $sql);
