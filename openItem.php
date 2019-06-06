@@ -86,7 +86,6 @@
 					
 				</script>
 				<input type="number" value="1" min="1" max="10" class="num_count">
-				<p id="testId" data-art="<?php echo $openItem[0]['id'] ?>">123test</p>
 				<input type="submit" id="addToBasket" value="Добавить в корзину" data-art="<?php echo $openItem[0]['id'] ?>" class="bug_button">
 			</form>
 		</div>
