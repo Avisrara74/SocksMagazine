@@ -1,5 +1,9 @@
+<script  src="js/basket.js"></script>
 <main class="shopBasket">
 	<p> Не забудьте добавить <a href="">коробочку</a>, чтобы красиво упаковать ваши покупки</p>
+	<script type="text/javascript">
+		showShopBasket();
+	</script>
 	<div class="shopBasketContentWrap">
 		<div class="basketLeftContent">
 			<div class="basketContentWrap">

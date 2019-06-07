@@ -101,4 +101,5 @@
 		<a href="#" class="basketLink"><div class="basketButton"><img src="/images/shop/shop-basket.png" title="Корзина"><p>Корзина</p></div></a>
 	</div>
 	<script  src="js/func.js"></script>
+	<script  src="js/basket.js"></script>
 </main>

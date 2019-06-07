@@ -5,26 +5,6 @@ let checkbox1 = document.getElementById('checkbox1');
 let checkbox2 = document.getElementById('checkbox2');
 let num_count = document.getElementsByClassName('num_count');
 let currentImg = 0;
-let shopBasket = {};
-let addToBasket = document.getElementById("addToBasket");
-
-addToBasket.onclick = function() {
-	let articul = $(this).attr('data-art');
-	if (shopBasket[articul] != undefined)  {
-		shopBasket[articul] += parseInt(num_count[0].value,10);
-	} else {
-		shopBasket[articul] = parseInt(num_count[0].value,10);
-	}
-	localStorage.setItem('shopBasket', JSON.stringify(shopBasket));
-}
-
-function checkBasket() {
-	// if have items in localstorage put them in shopBasket
-	if (localStorage.getItem('shopBasket') != null) {
-		shopBasket = JSON.parse(localStorage.getItem('shopBasket'));
-	}
-}
-
 
 
 
@@ -82,6 +62,16 @@ next.onclick = function() {
 	}
 	slider();
 };
+
+addToBasket.onclick = function() {
+	let articul = $(this).attr('data-art');
+	if (shopBasket[articul] != undefined)  {
+		shopBasket[articul] += parseInt(num_count[0].value,10);
+	} else {
+		shopBasket[articul] = parseInt(num_count[0].value,10);
+	}
+	localStorage.setItem('shopBasket', JSON.stringify(shopBasket));
+}
 
 
 
