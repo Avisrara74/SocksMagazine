@@ -12,12 +12,12 @@
 				<div><h1>Корзина</h1></div>
 				<div class="basketItemsWrap">
 				<?php
-					$arr = [1, 2, 3, 4];
+					$arr = [1, 2, 3, 4, 5];
 					for ($i = 0; $i <= count($arr)-1; $i++) {
 						$test = GET_basketItems($arr[$i]);	
 				?>
 					<div class="basketItem">
-						<a href="#">
+						<a href="index.php?page=<?php echo $test[$i]['id'] ?>">
 							<img src="<?php echo $test[$i]['way'] ?>" alt="" class="increase_big increase">
 						</a>
 						<div class="basketItemInfo">
@@ -41,7 +41,7 @@
 							</div>	
 						</div>
 					</div>
-					<?php } ?>
+				<?php } ?>
 				</div>
 
 				<div class="basketPriceInfo">
