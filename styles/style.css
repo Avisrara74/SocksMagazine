@@ -421,9 +421,6 @@ a:nth-child(6)>.content-img {
 	text-decoration: none;
 	color: black;
 	display: block;
-    max-height: 600px;
-    height: 420px;
-    min-height: 300px;
 }
 
 .categoryMain h1 {
