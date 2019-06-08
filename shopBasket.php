@@ -4,27 +4,27 @@
 	<script type="text/javascript">
 		showShopBasket();
 	</script>
-	<?php
-		$arr = [1, 8, 11, 15];
-		for ($i = 0; $i <= count($arr); $i++) {
-			$test = GET_basketItems($arr[$i]);
-		}
-	?>
+	
+	
 	<div class="shopBasketContentWrap">
 		<div class="basketLeftContent">
 			<div class="basketContentWrap">
 				<div><h1>Корзина</h1></div>
-
 				<div class="basketItemsWrap">
+				<?php
+					$arr = [1, 8, 3, 4, 5];
+					for ($i = 0; $i <= count($arr)-1; $i++) {
+						$test = GET_basketItems($arr[$i]);	
+				?>
 					<div class="basketItem">
 						<a href="#">
-							<img src="images/shop/items/1-1.jpg" alt="" class="increase_big increase">
+							<img src="<?php echo $test[$i]['way'] ?>" alt="" class="increase_big increase">
 						</a>
 						<div class="basketItemInfo">
 							<div>
 								<div>
 									<a href="#">
-										<h4>Тут название наших любимых носков</h4>
+										<h4><?php echo $test[$i]['title'] ?></h4>
 									</a>
 								</div>
 								<span class="cross">&times;</span>	
@@ -33,48 +33,21 @@
 							<div>
 								<select name="" id="">
 									<option value="">1</option>
-									<option value="">2</option>
-									<option value="">3</option>
-									<option value="">4</option>
-									<option value="">5</option>
 								</select>	
-								<span>2 000,00 р.</span>
+								<span>
+									<span class="price"><?php echo $test[$i]['price_rub'] ?></span><span>,00 р.</span>
+								</span>
+								
 							</div>	
 						</div>
 					</div>
-
-					<div class="basketItem">
-						<a href="#">
-							<img src="images/shop/items/1-2.jpg" alt="" class="increase_big increase">
-						</a>
-						<div class="basketItemInfo">
-							<div>
-								<div>
-									<a href="#">
-										<h4>Тут название наших любимых носков</h4>
-									</a>
-								</div>
-								<span class="cross">&times;</span>	
-							</div>
-							<h4></h4>
-							<div>
-								<select name="" id="">
-									<option value="">1</option>
-									<option value="">2</option>
-									<option value="">3</option>
-									<option value="">4</option>
-									<option value="">5</option>
-								</select>	
-								<span>2 000,00 р.</span>
-							</div>	
-						</div>
-					</div>
+					<?php } ?>
 				</div>
 
 				<div class="basketPriceInfo">
-					<h4>Итого <span>2 000,00 р.</span></h4>
-					<h4>Доставка <span>Бесплатно</span></h4>
-					<h4>Сумма <span>2 000,00 р.</span></h4>
+					<h4>Итого <span><script> getFullPrice(); </script>,00 р.</span></h4>
+					<h4>Доставка <span class="deliveryPrice">Бесплатно</span></h4>
+					<h4>Сумма <span><script> getFullPrice(); </script>,00 р.</span></h4>
 					<h4>Что-то не нашли? <a href="#">Продолжить покупки</a></h4>
 				</div>
 
