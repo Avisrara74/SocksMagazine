@@ -710,8 +710,10 @@ main.openItem {
 /* -----------leftContent-------------- */
 
 main.shopBasket {
-	margin: 12vh 10vw 0px 10vw;
+	margin: 12vh 10vw 15vh 10vw;
 	font-family: proxima-nova, sans-serif;
+	display: grid;
+    justify-self: center;
 }
 
 .shopBasket p {
@@ -743,10 +745,6 @@ main.shopBasket {
 	display: grid;
 }
 
-.basketLeftContent>div:first-child {
-	max-height: 40px;
-}
-
 .basketContentWrap>div:first-child>h1, .basketRightContent>div>h1 {
 	font-size: 1.4em;
 	font-weight: bold;
@@ -774,6 +772,13 @@ main.shopBasket {
 
 .basketItemInfo {
 	padding-left: 1vw;
+	position: relative;
+}
+
+.basketItemInfo>div:first-child>.cross {
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 .basketItemInfo>div:first-child {
@@ -784,9 +789,6 @@ main.shopBasket {
 
 .cross {
 	color: #57c4bf;
-	font-size: 24px;
-	align-self: start;
-	padding-top: 4px;
 	cursor: pointer;
 }
 
@@ -815,7 +817,7 @@ main.shopBasket {
 }
 
 .basketItemInfo>div:first-child>div, .basketItemInfo>div:last-child>h4 {
-	align-self: end;
+	align-self: center;
 }
 
 .basketPriceInfo>span {
@@ -1057,9 +1059,6 @@ footer>div:nth-child(3)>p:last-child {
 	.basketItem>a>img {
 		display: none;
 	}
-	.cross {
-		padding-top: 0px;
-	}
 	.categoryItems>a {
 		height: 370px;
 	}
@@ -1206,7 +1205,6 @@ footer>div:nth-child(3)>p:last-child {
 
 	.shopBasketContentWrap {
 		grid-template-columns: 1fr;
-		grid-template-rows: minmax(550px, 600px) 1fr;
 	}
 	.basketItem {
 		grid-template-columns: 1fr 4fr;
@@ -1220,12 +1218,9 @@ footer>div:nth-child(3)>p:last-child {
 	.basketItemInfo>div:first-child>div, .basketItemInfo>div:last-child>h4 {
     	align-self: center;
 	}
-	.basketLeftContent {
-		max-height: 450px;
-	}
 	.basketRightContent {
 		padding: 0px;
-		margin-top: -10vh;
+		margin-top: 7vh;
 	}
 	.basketRightContent>div>h1 {
 		display: none;
@@ -1260,16 +1255,7 @@ footer>div:nth-child(3)>p:last-child {
 	}
 }
 
-@media (max-width: 530px) {
-	.basketRightContent {
-		margin-top: -15vh;
-	}
-}
-
 @media (max-width: 500px) {
-	.basketRightContent {
-		margin-top: -17vh;
-	}
 	.shopItems {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;

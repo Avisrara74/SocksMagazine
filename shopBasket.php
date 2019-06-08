@@ -12,7 +12,7 @@
 				<div><h1>Корзина</h1></div>
 				<div class="basketItemsWrap">
 				<?php
-					$arr = [1, 8, 3, 4, 5];
+					$arr = [1, 2, 3, 4];
 					for ($i = 0; $i <= count($arr)-1; $i++) {
 						$test = GET_basketItems($arr[$i]);	
 				?>
@@ -27,7 +27,7 @@
 										<h4><?php echo $test[$i]['title'] ?></h4>
 									</a>
 								</div>
-								<span class="cross">&times;</span>	
+								<span class="cross">х</span>	
 							</div>
 							<h4></h4>
 							<div>
@@ -90,9 +90,5 @@
 		
 
 		
-	</div>
-	<div class="bottomButtons">
-		<a href="/index.php?page=search" class="searchLink"><div class="searchButton"><img src="/images/shop/search.png" title="Поиск"><p>Поиск</p></div></a>
-		<a href="#" class="basketLink"><div class="basketButton"><img src="/images/shop/shop-basket.png" title="Корзина"><p>Корзина</p></div></a>
 	</div>
 </main>
