@@ -16,8 +16,6 @@ $page = $_GET['page'];
 		require('delivery.php');
 	} elseif ($page == 'pay') {
 		require('pay.php');
-	} elseif ($page == 'openItem') {
-		require('openItem.php');
 	} elseif ($page == 'shopBasket') {
 		require('shopBasket.php');
 	}
@@ -63,6 +61,18 @@ function GET_openItem ($product_id) {
 	$openItem = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 	return $openItem; 
+}
+
+
+function GET_basketItems ($product_id) {
+	global $connection;
+	$sql = "SELECT product.id, images.way, product.title, product.price_rub, product.items
+		FROM product
+		INNER JOIN  images ON images.id_product = product.id WHERE '$product_id' = product.id";
+	$result = mysqli_query($connection, $sql);
+	$basketItems = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+	return $basketItems;
 }
 
 ?>

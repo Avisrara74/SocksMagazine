@@ -14,6 +14,7 @@ function checkBasket() {
 function showShopBasket() {
 	let out = '';
 	for (let key in shopBasket) {
-		out += key + '<br>';
+		out += key + ' ';
 	}
+	console.log(out);
 }

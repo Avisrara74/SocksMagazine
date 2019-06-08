@@ -4,6 +4,12 @@
 	<script type="text/javascript">
 		showShopBasket();
 	</script>
+	<?php
+		$arr = [1, 8, 11, 15];
+		for ($i = 0; $i <= count($arr); $i++) {
+			$test = GET_basketItems($arr[$i]);
+		}
+	?>
 	<div class="shopBasketContentWrap">
 		<div class="basketLeftContent">
 			<div class="basketContentWrap">
