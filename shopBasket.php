@@ -10,21 +10,22 @@
 		<div class="basketLeftContent">
 			<div class="basketContentWrap">
 				<div><h1>Корзина</h1></div>
-				<div class="basketItemsWrap">
 				<?php
 					$arr = [1, 2, 3, 4, 5];
-					for ($i = 0; $i <= count($arr)-1; $i++) {
-						$test = GET_basketItems($arr[$i]);	
+				//	$test = GET_basketItems(1);
+				//	vardump($test);
+					
 				?>
+				<div class="basketItemsWrap">
 					<div class="basketItem">
-						<a href="index.php?page=<?php echo $test[$i]['id'] ?>">
-							<img src="<?php echo $test[$i]['way'] ?>" alt="" class="increase_big increase">
+						<a href="#">
+							<img src="images/shop/items/1-3.jpg" alt="" class="increase_big increase">
 						</a>
 						<div class="basketItemInfo">
 							<div>
 								<div>
 									<a href="#">
-										<h4><?php echo $test[$i]['title'] ?></h4>
+										<h4>Название первых носков</h4>
 									</a>
 								</div>
 								<span class="cross">х</span>	
@@ -35,13 +36,37 @@
 									<option value="">1</option>
 								</select>	
 								<span>
-									<span class="price"><?php echo $test[$i]['price_rub'] ?></span><span>,00 р.</span>
+									<span class="price">123</span><span>,00 р.</span>
 								</span>
 								
 							</div>	
 						</div>
 					</div>
-				<?php } ?>
+					<div class="basketItem">
+						<a href="#">
+							<img src="images/shop/items/2-1.jpg" alt="" class="increase_big increase">
+						</a>
+						<div class="basketItemInfo">
+							<div>
+								<div>
+									<a href="#">
+										<h4>Название вторых носков</h4>
+									</a>
+								</div>
+								<span class="cross">х</span>	
+							</div>
+							<h4></h4>
+							<div>
+								<select name="" id="">
+									<option value="">1</option>
+								</select>	
+								<span>
+									<span class="price">123</span><span>,00 р.</span>
+								</span>
+								
+							</div>	
+						</div>
+					</div>
 				</div>
 
 				<div class="basketPriceInfo">
