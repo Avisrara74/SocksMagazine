@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="styles/mobile_menu.css" type="text/css">
 	<link rel="shortcut icon" href="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 	<header>

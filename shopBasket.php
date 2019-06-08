@@ -1,20 +1,26 @@
+<?php include('./forAjax.php');?>
 <script  src="js/basket.js"></script>
 <main class="shopBasket">
 	<p> Не забудьте добавить <a href="">коробочку</a>, чтобы красиво упаковать ваши покупки</p>
 	<script type="text/javascript">
-		showShopBasket();
+		
 	</script>
-	
+    <p id="result"></p>
 	
 	<div class="shopBasketContentWrap">
 		<div class="basketLeftContent">
 			<div class="basketContentWrap">
 				<div><h1>Корзина</h1></div>
 				<?php
-					$arr = [1, 2, 3, 4, 5];
-				//	$test = GET_basketItems(1);
-				//	vardump($test);
-					
+				$test = [5, 6, 7, 8 , 9];
+				print_r($_POST);
+				/*	$product_id = [1, 2, 3, 4, 5];
+					foreach ($product_id as $items) {
+						$test = GET_basketItems($items);
+						vardump($test);
+					}
+				*/
+
 				?>
 				<div class="basketItemsWrap">
 					<div class="basketItem">

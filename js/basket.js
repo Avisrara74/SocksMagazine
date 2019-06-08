@@ -13,13 +13,15 @@ function checkBasket() {
 	}
 }
 
-function showShopBasket() {
-	let out = '';
-	for (let key in shopBasket) {
-		out += key + ' ';
+$.ajax ({
+	url: "forAjax.php",
+	method: "post",
+	data: { shopBasket : JSON.stringify(shopBasket) },
+	success: function(data) {
+		console.log(data);
 	}
-	console.log(out);
-}
+});
+
 
 function getFullPrice() {
 	let fullPrice = 0;
