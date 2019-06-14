@@ -1,4 +1,6 @@
 <?php 
-	$shopBasket = json_decode($_POST['shopBasket']);
-	var_dump($shopBasket);
+	session_start();
+	$shopBasketObj = json_decode($_POST['shopBasket']);
+	$shopBasketArr = (array) $shopBasketObj;
+	$_SESSION['shopBasket'] = $shopBasketArr;
 ?>

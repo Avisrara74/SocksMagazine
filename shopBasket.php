@@ -1,78 +1,51 @@
-<?php include('./forAjax.php');?>
+<?php session_start(); ?>
 <script  src="js/basket.js"></script>
 <main class="shopBasket">
 	<p> Не забудьте добавить <a href="">коробочку</a>, чтобы красиво упаковать ваши покупки</p>
-	<script type="text/javascript">
-		
-	</script>
-    <p id="result"></p>
-	
 	<div class="shopBasketContentWrap">
 		<div class="basketLeftContent">
 			<div class="basketContentWrap">
 				<div><h1>Корзина</h1></div>
 				<?php
-				$test = [5, 6, 7, 8 , 9];
-				print_r($_POST);
-				/*	$product_id = [1, 2, 3, 4, 5];
-					foreach ($product_id as $items) {
-						$test = GET_basketItems($items);
-						vardump($test);
-					}
-				*/
+
+				$shopBasket = $_SESSION['shopBasket'];
+				$shopBasketKeys = array_keys($shopBasket);
 
 				?>
 				<div class="basketItemsWrap">
+					<?php 
+						foreach ($shopBasketKeys as $shopBasketKey):
+						$shopBasketItem = GET_basketItems($shopBasketKey);
+					?>
 					<div class="basketItem">
 						<a href="#">
-							<img src="images/shop/items/1-3.jpg" alt="" class="increase_big increase">
+							<img src="<?php echo $shopBasketItem[0]['way'] ?>" alt="" class="increase_big increase">
 						</a>
 						<div class="basketItemInfo">
 							<div>
 								<div>
 									<a href="#">
-										<h4>Название первых носков</h4>
+										<h4><?php echo $shopBasketItem[0]['title'] ?></h4>
 									</a>
 								</div>
 								<span class="cross">х</span>	
 							</div>
-							<h4></h4>
+							
 							<div>
 								<select name="" id="">
-									<option value="">1</option>
+									<?php for ($i = 1; $i <= $shopBasketItem[0]['items']; $i++) {?> 
+										<option value=""><?php echo $i; ?></option>
+								<?php	} ?>
+									
 								</select>	
 								<span>
-									<span class="price">123</span><span>,00 р.</span>
+									<span class="price"><?php echo $shopBasketItem[0]['price_rub'] ?></span><span>,00 р.</span>
 								</span>
 								
 							</div>	
 						</div>
 					</div>
-					<div class="basketItem">
-						<a href="#">
-							<img src="images/shop/items/2-1.jpg" alt="" class="increase_big increase">
-						</a>
-						<div class="basketItemInfo">
-							<div>
-								<div>
-									<a href="#">
-										<h4>Название вторых носков</h4>
-									</a>
-								</div>
-								<span class="cross">х</span>	
-							</div>
-							<h4></h4>
-							<div>
-								<select name="" id="">
-									<option value="">1</option>
-								</select>	
-								<span>
-									<span class="price">123</span><span>,00 р.</span>
-								</span>
-								
-							</div>	
-						</div>
-					</div>
+					<?php endforeach; ?>
 				</div>
 
 				<div class="basketPriceInfo">
@@ -123,3 +96,5 @@
 		
 	</div>
 </main>
+
+<?php session_destroy(); ?>

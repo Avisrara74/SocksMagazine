@@ -63,12 +63,12 @@ function GET_openItem ($product_id) {
 	return $openItem; 
 }
 
-
+// get basket-items with 1 img for 1 item
 function GET_basketItems ($product_id) {
 	global $connection;
 	$sql = "SELECT product.id, images.way, product.title, product.price_rub, product.items
 		FROM product
-		INNER JOIN  images ON images.id_product = product.id WHERE '$product_id' = product.id";
+		INNER JOIN  images ON images.id_product = product.id WHERE '$product_id' = product.id GROUP BY images.id_product";
 	$result = mysqli_query($connection, $sql);
 	$basketItems = mysqli_fetch_all($result, MYSQLI_ASSOC);
 

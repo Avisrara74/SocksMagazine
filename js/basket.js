@@ -4,7 +4,23 @@ let price = document.getElementsByClassName("price");
 let deliveryPrice = document.getElementsByClassName("deliveryPrice");
 
 
+window.onload = function() {
+	let test = document.getElementById("result");
+	$.ajax ({
+	url: "forAjax.php",
+	method: "POST",
+	data: { shopBasket : JSON.stringify(shopBasket) },
+	success: function(data) {
+		
+	}
+});
+}
+
+
+
 checkBasket();
+
+
 
 function checkBasket() {
 	// if have items in localstorage put them in shopBasket
@@ -13,14 +29,7 @@ function checkBasket() {
 	}
 }
 
-$.ajax ({
-	url: "forAjax.php",
-	method: "post",
-	data: { shopBasket : JSON.stringify(shopBasket) },
-	success: function(data) {
-		console.log(data);
-	}
-});
+
 
 
 function getFullPrice() {
