@@ -21,10 +21,18 @@
 			<form action="/index.php?page=shopBasket" method="POST">
 			<br>
 				<span>Количество:</span>
-				<input type="number" value="1" min="1" max="<?php echo $openItem[0]['items'] ?>" class="num_count">
+				<?php 
+					if ($openItem[0]['items'] <= 0) {
+						$value = 0;
+					} else {
+						$value = 1;
+					}
+				?>
+				<input type="number" value="<?php echo $value ?>" min="0" max="<?php echo $openItem[0]['items'] ?>" class="num_count">
 				<input type="submit" id="addToBasket" value="Добавить в корзину" data-art="<?php echo $openItem[0]['id'] ?>" class="bug_button">
 			</form>
 		</div>
+		<div class="displayNone noHaveIt"><p>Товара нет в наличии</p></div>
 		<div class="alsoLike">
 			<div>
 				<a href="#">

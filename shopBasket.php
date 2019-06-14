@@ -8,13 +8,12 @@
 				<div><h1>Корзина</h1></div>
 				<?php
 
-				$shopBasket = $_SESSION['shopBasket'];
-				$shopBasketKeys = array_keys($shopBasket);
-
+					$shopBasketKeys = $_SESSION['shopBasket'];
+		
 				?>
 				<div class="basketItemsWrap">
 					<?php 
-						foreach ($shopBasketKeys as $shopBasketKey):
+						foreach ($shopBasketKeys as $shopBasketKey => $value):
 						$shopBasketItem = GET_basketItems($shopBasketKey);
 					?>
 					<div class="basketItem">
@@ -32,9 +31,10 @@
 							</div>
 							
 							<div>
-								<select name="" id="">
+								<select>
+									<option id="hideIt"><?php echo $value ?></option>
 									<?php for ($i = 1; $i <= $shopBasketItem[0]['items']; $i++) {?> 
-										<option value=""><?php echo $i; ?></option>
+										<option><?php echo $i; ?></option>
 								<?php	} ?>
 									
 								</select>	

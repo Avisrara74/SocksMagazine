@@ -1,24 +1,23 @@
-let shopBasket = {};
+let shopBasket = {}
 let addToBasket = document.getElementById("addToBasket");
 let price = document.getElementsByClassName("price");
 let deliveryPrice = document.getElementsByClassName("deliveryPrice");
 
 
+
+checkBasket();
 window.onload = function() {
-	let test = document.getElementById("result");
 	$.ajax ({
 	url: "forAjax.php",
 	method: "POST",
 	data: { shopBasket : JSON.stringify(shopBasket) },
-	success: function(data) {
-		
-	}
+	success: function(data) {}
 });
 }
 
 
 
-checkBasket();
+
 
 
 
