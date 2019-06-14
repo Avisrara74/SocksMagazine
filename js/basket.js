@@ -4,22 +4,16 @@ let price = document.getElementsByClassName("price");
 let deliveryPrice = document.getElementsByClassName("deliveryPrice");
 
 
-
 checkBasket();
 window.onload = function() {
 	$.ajax ({
 	url: "forAjax.php",
 	method: "POST",
 	data: { shopBasket : JSON.stringify(shopBasket) },
-	success: function(data) {}
+	success: function(data) {
+	}
 });
 }
-
-
-
-
-
-
 
 function checkBasket() {
 	// if have items in localstorage put them in shopBasket
@@ -27,9 +21,6 @@ function checkBasket() {
 		shopBasket = JSON.parse(localStorage.getItem('shopBasket'));
 	}
 }
-
-
-
 
 function getFullPrice() {
 	let fullPrice = 0;

@@ -9,9 +9,13 @@
 				<?php
 
 					$shopBasketKeys = $_SESSION['shopBasket'];
+					$shopBasketSelectItem = $_SESSION['item'];
 		
 				?>
 				<div class="basketItemsWrap">
+					<script>
+						let test = -1;
+					</script>
 					<?php 
 						foreach ($shopBasketKeys as $shopBasketKey => $value):
 						$shopBasketItem = GET_basketItems($shopBasketKey);
@@ -31,28 +35,52 @@
 							</div>
 							
 							<div>
-								<select>
-									<option id="hideIt"><?php echo $value ?></option>
+								<select class="testFunc" onchange="readSelectValue();">
+									<option><?php echo $value ?></option>
 									<?php for ($i = 1; $i <= $shopBasketItem[0]['items']; $i++) {?> 
-										<option><?php echo $i; ?></option>
+										<option class="optionValue" value="<?php echo $i ?>"><?php echo $i  ?></option>
 								<?php	} ?>
-									
 								</select>	
+								<script>
+									
+									function readSelectValue() {
+										let item = parseInt(this.$("testFunc").context.activeElement.value);
+
+									//	let itemPrice = document.getElementsByClassName("price");
+									//	let standartPrice = <?php echo $shopBasketItem[0]['price_rub']; ?>;
+										console.log(typeof(item));
+									//	console.log(standartPrice * item);
+										$.ajax ({
+											url: "priceUpd.php",
+											method: "POST",
+											data: { item : JSON.stringify(item) },
+											success: function(data) {
+												console.log(item);
+											}
+										});
+									}
+								</script>
 								<span>
-									<span class="price"><?php echo $shopBasketItem[0]['price_rub'] ?></span><span>,00 р.</span>
+									<span class="price">
+										<?php 
+										$shopBasketSelectItem = $_SESSION['item'];
+										echo $shopBasketItem[0]['price_rub'] * $value; 
+										?>		
+									</span>
+										<span>,00 р.</span>
 								</span>
-								
-							</div>	
+							</div>
 						</div>
 					</div>
 					<?php endforeach; ?>
+					<script>;</script>
 				</div>
 
 				<div class="basketPriceInfo">
 					<h4>Итого <span><script> getFullPrice(); </script>,00 р.</span></h4>
 					<h4>Доставка <span class="deliveryPrice">Бесплатно</span></h4>
 					<h4>Сумма <span><script> getFullPrice(); </script>,00 р.</span></h4>
-					<h4>Что-то не нашли? <a href="#">Продолжить покупки</a></h4>
+					<h4>Что-то не нашли? <a href="index.php?page=shop">Продолжить покупки</a></h4>
 				</div>
 
 			</div>
