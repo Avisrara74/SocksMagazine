@@ -9,13 +9,10 @@
 				<?php
 
 					$shopBasketKeys = $_SESSION['shopBasket'];
-					$shopBasketSelectItem = $_SESSION['item'];
+
 		
 				?>
 				<div class="basketItemsWrap">
-					<script>
-						let test = -1;
-					</script>
 					<?php 
 						foreach ($shopBasketKeys as $shopBasketKey => $value):
 						$shopBasketItem = GET_basketItems($shopBasketKey);
@@ -35,37 +32,30 @@
 							</div>
 							
 							<div>
-								<select class="testFunc" onchange="readSelectValue();">
+								<select data-art="<?php echo $shopBasketItem[0]['id'] ?>" class="testFunc" onchange="readSelectValue();">
 									<option><?php echo $value ?></option>
 									<?php for ($i = 1; $i <= $shopBasketItem[0]['items']; $i++) {?> 
 										<option class="optionValue" value="<?php echo $i ?>"><?php echo $i  ?></option>
 								<?php	} ?>
 								</select>	
 								<script>
-									
 									function readSelectValue() {
 										let item = parseInt(this.$("testFunc").context.activeElement.value);
-
-									//	let itemPrice = document.getElementsByClassName("price");
-									//	let standartPrice = <?php echo $shopBasketItem[0]['price_rub']; ?>;
-										console.log(typeof(item));
-									//	console.log(standartPrice * item);
-										$.ajax ({
-											url: "priceUpd.php",
-											method: "POST",
-											data: { item : JSON.stringify(item) },
-											success: function(data) {
-												console.log(item);
-											}
-										});
-									}
+									//	let priceItem = document.getElementsByClassName("price");
+									//	console.log(priceItem[0].innerHTML = standartPrice * item);
+										let articul = this.$("price").context.activeElement.dataset.art;
+										shopBasket[articul] = item;
+										console.log(shopBasket);
+										localStorage.setItem('shopBasket', JSON.stringify(shopBasket));
+									//	document.getElementsByClassName("price")[0].innerText = ;
+									} 
 								</script>
 								<span>
-									<span class="price">
-										<?php 
-										$shopBasketSelectItem = $_SESSION['item'];
-										echo $shopBasketItem[0]['price_rub'] * $value; 
-										?>		
+									<span class="price" data-art="<?php echo $shopBasketItem[0]['id'] ?>">
+										<script>
+											document.write(<?php echo $shopBasketItem[0]['price_rub']; ?> * <?php echo $value ?>);
+										</script>
+											
 									</span>
 										<span>,00 р.</span>
 								</span>
