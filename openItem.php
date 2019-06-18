@@ -2,6 +2,9 @@
 	<?php 
 		$nav = $_GET['page'];
 		$openItem = GET_openItem($nav);
+		$nav_id = $openItem[0]['id_nav'];
+		$recomendItem = GET_recomendItems($nav_id);
+		shuffle($recomendItem);
 	?>
 	<div class="openItemWrap">
 		<div class="imagesWrap">
@@ -34,74 +37,33 @@
 		</div>
 		<div class="displayNone noHaveIt"><p>Товара нет в наличии</p></div>
 		<div class="alsoLike">
-			<div>
-				<a href="#">
-					<img src="images/shop/items/1-1.jpg" alt="" class="increase_big increase">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
-			</div>
-			<div>
-				<a href="#">
-					<img src="images/shop/items/2-1.jpg" alt="" class="increase_big increase">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
-			</div>
-			<div>
-				<a href="#">
-					<img src="images/shop/items/3-1.jpg" alt="" class="increase_big increase">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
-			</div>
+			<?php for ($i=0; $i <= 2; $i++) { ?>
+				<div>
+					<a href="index.php?page=<?php echo $recomendItem[$i]['id'] ?>">
+						<img src="<?php echo $recomendItem[$i]['way'] ?>" alt="" class="increase_big increase">
+						<p><?php echo $recomendItem[$i]['title'] ?></p>
+						<br>
+						<p><?php echo $recomendItem[$i]['price_rub'] ?>,00 р.</p>
+					</a>
+				</div>
+			<?php	} ?>
+			
 		</div>
 	</div>
 	<div class="alsoLikeMobile">
 		<h1 class="alsoLikeMobileText">Вам может понравиться: </h3>
 		<div class="alsoLikeMobileItems">
-			<div>
-				<a href="#">
-					<img src="images/shop/items/1-1.jpg" alt="" class="increase_big increase">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
-			</div>
-			<div>
-				<a href="#">
-					<img src="images/shop/items/2-1.jpg" alt="" class="increase_big increase">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
-			</div>
-			<div>
-				<a href="#">
-					<img src="images/shop/items/3-1.jpg" alt="" class="increase_big increase">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
-			</div>
-			<div>
-				<a href="#">
-					<img src="images/shop/items/1-1.jpg" alt="" class="increase_big increase">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
-			</div>
-			<div>
-				<a href="#">
-					<img src="images/shop/items/2-1.jpg" alt="" class="increase_big increase">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
-			</div>
-			<div>
-				<a href="#">
-					<img src="images/shop/items/3-1.jpg" alt="" class="increase_big increase">
-					<p>Название</p>
-					<p>2500.00р</p>
-				</a>
-			</div>
+			<?php for ($i=0; $i <= count($recomendItem) - 1; $i++) { ?>
+				<div>
+					<a href="index.php?page=<?php echo $recomendItem[$i]['id'] ?>">
+						<img src="<?php echo $recomendItem[$i]['way'] ?>" alt="" class="increase_big increase">
+						<p><?php echo $recomendItem[$i]['title'] ?></p>
+						<br>
+						<p><?php echo $recomendItem[$i]['price_rub'] ?>,00 р.</p>
+					</a>
+				</div>
+				<?php if ($i >= 7) { $i = count($recomendItem) - 1; } ?>
+			<?php	} ?>
 		</div>
 	</div>
 	<div class="bottomButtons">

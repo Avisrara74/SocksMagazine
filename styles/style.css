@@ -670,7 +670,7 @@ main.openItem {
 .alsoLikeMobileItems {
 	padding: 1vh 0px 10vh 0px;
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	text-align: center;
 	grid-gap: 10px;
 
@@ -811,10 +811,6 @@ main.shopBasket {
 
 .basketItemInfo>div:first-child>h4, .basketItemInfo>div:last-child>select {
 	align-self: start;
-}
-
-.basketItemInfo>div:first-child>div, .basketItemInfo>div:last-child>h4 {
-	align-self: center;
 }
 
 .basketPriceInfo>span {
@@ -1275,6 +1271,12 @@ footer>div:nth-child(3)>p:last-child {
 	.categoryItems>a {
 		height: 370px;
 	}
+	.alsoLikeMobileItems {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.alsoLikeMobileItems>div:nth-child(5), .alsoLikeMobileItems>div:nth-child(6) {
+		display: none;
+	}
 }
 
 
@@ -1293,12 +1295,4 @@ footer>div:nth-child(3)>p:last-child {
 	}
 }
 
-@media (max-width: 340px) {
-	.alsoLikeMobileItems {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	.alsoLikeMobileItems>div:nth-child(5), .alsoLikeMobileItems>div:nth-child(6) {
-		display: none;
-	}
-}
 

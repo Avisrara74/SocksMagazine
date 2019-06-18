@@ -54,7 +54,7 @@ function GET_navSomeProducts ($nav) {
 function GET_openItem ($product_id) {
 	global $connection;
 	$sql = "SELECT product.id, images.way, product.title, 
-	product.price_rub, product.items
+	product.price_rub, product.items, product.id_nav
 		FROM product
 		INNER JOIN images ON images.id_product = product.id WHERE '$product_id' = product.id";
 	$result = mysqli_query($connection, $sql);
@@ -73,6 +73,17 @@ function GET_basketItems ($product_id) {
 	$basketItems = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 	return $basketItems;
+}
+
+function GET_recomendItems ($nav) {
+	global $connection;
+	$sql = "SELECT product.id, images.way, product.title, product.price_rub
+		FROM product
+		INNER JOIN  images ON images.id_product = product.id WHERE '$nav' = product.id_nav GROUP BY images.id_product";
+	$result = mysqli_query($connection, $sql);
+	$recomendItem = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+	return $recomendItem;
 }
 
 ?>

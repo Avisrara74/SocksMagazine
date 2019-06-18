@@ -28,14 +28,20 @@
 										<h4><?php echo $shopBasketItem[0]['title'] ?></h4>
 									</a>
 								</div>
-								<span class="cross">х</span>	
+								<!-- need fix this dirty code -->
+								<span class="cross" data-art="<?php echo $shopBasketItem[0]['id'] ?>" 
+								onclick="
+									let articul = $(this).attr('data-art');
+									delete shopBasket[articul];
+									localStorage.setItem('shopBasket', JSON.stringify(shopBasket));
+								">х</span>	
 							</div>
 							
 							<div>
 								<select data-art="<?php echo $shopBasketItem[0]['id'] ?>" class="testFunc" onchange="readSelectValue();">
 									<option><?php echo $value ?></option>
 									<?php for ($i = 1; $i <= $shopBasketItem[0]['items']; $i++) {?> 
-										<option class="optionValue" value="<?php echo $i ?>"><?php echo $i  ?></option>
+										<option class="optionValue" value="<?php echo $i ?>"><?php echo $i ?></option>
 								<?php	} ?>
 								</select>	
 								<script>
@@ -46,8 +52,7 @@
 										let articul = this.$("price").context.activeElement.dataset.art;
 										shopBasket[articul] = item;
 										console.log(shopBasket);
-										localStorage.setItem('shopBasket', JSON.stringify(shopBasket));
-									//	document.getElementsByClassName("price")[0].innerText = ;
+										localStorage.setItem('shopBasket', JSON.stringify(shopBasket));	
 									} 
 								</script>
 								<span>
@@ -57,13 +62,12 @@
 										</script>
 											
 									</span>
-										<span>,00 р.</span>
+									<span>,00 р.</span>
 								</span>
 							</div>
 						</div>
 					</div>
 					<?php endforeach; ?>
-					<script>;</script>
 				</div>
 
 				<div class="basketPriceInfo">
