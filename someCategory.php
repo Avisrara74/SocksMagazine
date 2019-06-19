@@ -22,7 +22,6 @@
 		<?php endforeach; ?>
 	</div>
 	<div class="bottomButtons">
-		<a href="/index.php?page=search" class="searchLink"><div class="searchButton"><img src="/images/shop/search.png" title="Поиск"><p>Поиск</p></div></a>
 		<a href="/index.php?page=shopBasket" class="basketLink"><div class="basketButton"><img src="/images/shop/shop-basket.png" title="Корзина"><p>Корзина</p></div></a>
 	</div>
 </main>

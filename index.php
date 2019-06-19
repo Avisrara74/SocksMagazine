@@ -33,10 +33,10 @@
 			<button class="menu-toggle"></button>
 			<nav class="mobile_menu">
 			  <ul class="menu">
-			    <li data-text="Главная">Главная</li>
-			    <li data-text="Магазин">Магазин</li>
-			    <li data-text="Доставка">Доставка</li>
-			    <li data-text="Оплата">Оплата</li>
+			    <li data-text="Главная" onclick="window.location = 'index.php'">Главная</li>
+			    <li data-text="Магазин" onclick="window.location = 'index.php?page=shop'">Магазин</li>
+			    <li data-text="Доставка" onclick="window.location = 'index.php?page=delivery'">Доставка</li>
+			    <li data-text="Оплата" onclick="window.location = 'index.php?page=pay'">Оплата</li>
 			  </ul>
 			</nav>
 		</div>

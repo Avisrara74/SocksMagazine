@@ -37,7 +37,7 @@
 		</div>
 		<div class="displayNone noHaveIt"><p>Товара нет в наличии</p></div>
 		<div class="alsoLike">
-			<?php for ($i=0; $i <= 2; $i++) { ?>
+			<?php for ($i=0; $i <= count($recomendItem) - 1; $i++) { ?>
 				<div>
 					<a href="index.php?page=<?php echo $recomendItem[$i]['id'] ?>">
 						<img src="<?php echo $recomendItem[$i]['way'] ?>" alt="" class="increase_big increase">
@@ -46,6 +46,7 @@
 						<p><?php echo $recomendItem[$i]['price_rub'] ?>,00 р.</p>
 					</a>
 				</div>
+				<?php if ($i >= 2) { $i = count($recomendItem) - 1; } ?>
 			<?php	} ?>
 			
 		</div>
@@ -67,7 +68,6 @@
 		</div>
 	</div>
 	<div class="bottomButtons">
-		<a href="/index.php?page=search" class="searchLink"><div class="searchButton"><img src="/images/shop/search.png" title="Поиск"><p>Поиск</p></div></a>
 		<a href="/index.php?page=shopBasket" class="basketLink"><div class="basketButton"><img src="/images/shop/shop-basket.png" title="Корзина"><p>Корзина</p></div></a>
 	</div>
 	<script  src="js/func.js"></script>

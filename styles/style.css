@@ -366,9 +366,7 @@ a:nth-child(6)>.content-img {
 
 .bottomButtons {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr;
-	grid-gap: 70px;
 	justify-self: center;
 	font-family: 'Russo One', sans-serif;
 	margin: 10vh auto 10vh auto;

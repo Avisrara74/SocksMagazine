@@ -7,10 +7,7 @@
 			<div class="basketContentWrap">
 				<div><h1>Корзина</h1></div>
 				<?php
-
 					$shopBasketKeys = $_SESSION['shopBasket'];
-
-		
 				?>
 				<div class="basketItemsWrap">
 					<?php 
@@ -83,8 +80,8 @@
 		<div class="basketRightContent">
 			<div>
 				<h1>Проверка</h1>
-				<p>Введите ваш email. На этот email вы будете получать уведомления об обновлении статуса товара </p>
-				<input type="text" class="printEmail" placeholder="Введите ваш Email">
+				<p>Введите ваш номер телефона. На этот номер вы будете получать уведомления об обновлении статуса товара </p>
+				<input type="text" class="printEmail" placeholder="Введите ваш номер телефона">
 				<label class="check option">
 					<input class="check__input" type="checkbox">
 					<span class="check__box"></span>
@@ -107,7 +104,7 @@
 				</div>
 				<div>
 					<p>Подтверждение заказа:</p>
-					<p>Выберите свой заказ и получите подтверждение по email.</p>
+					<p>Выберите свой заказ и получите подтверждение на номер телефона.</p>
 				</div>
 			</div>
 			
