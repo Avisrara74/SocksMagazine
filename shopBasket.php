@@ -1,14 +1,14 @@
 <?php session_start(); ?>
-<script  src="js/basket.js"></script>
+<script src="js/basket.js"></script>
 <main class="shopBasket">
 	<p> Не забудьте добавить <a href="">коробочку</a>, чтобы красиво упаковать ваши покупки</p>
 	<div class="shopBasketContentWrap">
-		<div class="basketLeftContent">
+		<?php
+			$shopBasketKeys = $_SESSION['shopBasket'];
+		?>
+		<div id="block" class="basketLeftContent">
 			<div class="basketContentWrap">
-				<div><h1>Корзина</h1></div>
-				<?php
-					$shopBasketKeys = $_SESSION['shopBasket'];
-				?>
+				<div><h1>Корзина</h1></div>	
 				<div class="basketItemsWrap">
 					<?php 
 						foreach ($shopBasketKeys as $shopBasketKey => $value):
@@ -21,7 +21,7 @@
 						<div class="basketItemInfo">
 							<div>
 								<div>
-									<a href="#">
+									<a href="index.php?page=<?php echo $shopBasketItem[0]['id'] ?>">
 										<h4><?php echo $shopBasketItem[0]['title'] ?></h4>
 									</a>
 								</div>
@@ -48,18 +48,13 @@
 									//	console.log(priceItem[0].innerHTML = standartPrice * item);
 										let articul = this.$("price").context.activeElement.dataset.art;
 										shopBasket[articul] = item;
-										console.log(shopBasket);
 										localStorage.setItem('shopBasket', JSON.stringify(shopBasket));	
+										window.location.reload();
 									} 
 								</script>
 								<span>
 									<span class="price" data-art="<?php echo $shopBasketItem[0]['id'] ?>">
-										<script>
-											document.write(<?php echo $shopBasketItem[0]['price_rub']; ?> * <?php echo $value ?>);
-										</script>
-											
-									</span>
-									<span>,00 р.</span>
+										<script>document.write(<?php echo $shopBasketItem[0]['price_rub']; ?> * <?php echo $value ?>);</script></span><span>,00 р.</span>
 								</span>
 							</div>
 						</div>
@@ -68,9 +63,9 @@
 				</div>
 
 				<div class="basketPriceInfo">
-					<h4>Итого <span><script> getFullPrice(); </script>,00 р.</span></h4>
+					<h4>Итого <span class="getFullPrice"><script> getFullPrice(); </script>,00 р.</span></h4>
 					<h4>Доставка <span class="deliveryPrice">Бесплатно</span></h4>
-					<h4>Сумма <span><script> getFullPrice(); </script>,00 р.</span></h4>
+					<h4>Сумма <span class="getFullPrice"><script> getFullPrice(); </script>,00 р.</span></h4>
 					<h4>Что-то не нашли? <a href="index.php?page=shop">Продолжить покупки</a></h4>
 				</div>
 
@@ -115,5 +110,6 @@
 		
 	</div>
 </main>
+
 
 <?php session_destroy(); ?>
